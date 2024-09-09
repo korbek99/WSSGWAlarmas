@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\Administrator.VM-23-W7-test\Desktop\WSServiceGateWay 03-10-2017" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Perfil1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/Entities.pdb" publishTime="06/29/2017 13:35:46" />
+    <file relUrl="bin/Business.dll" publishTime="10/03/2017 10:10:41" />
+    <file relUrl="bin/WSSGWAlarmas.pdb" publishTime="10/03/2017 10:10:42" />
+    <file relUrl="bin/Entities.dll" publishTime="06/29/2017 13:35:46" />
+    <file relUrl="bin/Business.pdb" publishTime="10/03/2017 10:10:41" />
+    <file relUrl="Web.config" publishTime="08/31/2017 13:54:59" />
+    <file relUrl="bin/DataAccess.pdb" publishTime="10/03/2017 10:10:41" />
+    <file relUrl="bin/DataAccess.dll" publishTime="10/03/2017 10:10:41" />
+    <file relUrl="bin/WSSGWAlarmas.dll" publishTime="10/03/2017 10:10:42" />
+    <file relUrl="ServiceGateway.asmx" publishTime="08/31/2017 13:59:25" />
+  </publishProfile>
+</publishData>

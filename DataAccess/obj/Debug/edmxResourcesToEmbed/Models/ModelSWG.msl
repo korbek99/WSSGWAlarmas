@@ -1,0 +1,839 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="SWG1ModelStoreContainer" CdmEntityContainer="SWG1Entities">
+    <EntitySetMapping Name="Adaptor">
+      <EntityTypeMapping TypeName="SWG1Model.Adaptor">
+        <MappingFragment StoreEntitySet="Adaptor">
+          <ScalarProperty Name="AdaptorID" ColumnName="AdaptorID" />
+          <ScalarProperty Name="AdaptorNameDescrip" ColumnName="AdaptorNameDescrip" />
+          <ScalarProperty Name="TypeAdaptorID" ColumnName="TypeAdaptorID" />
+          <ScalarProperty Name="AdaptorSite" ColumnName="AdaptorSite" />
+          <ScalarProperty Name="AdaptorUser" ColumnName="AdaptorUser" />
+          <ScalarProperty Name="AdaptorPass" ColumnName="AdaptorPass" />
+          <ScalarProperty Name="AdaptorPort" ColumnName="AdaptorPort" />
+          <ScalarProperty Name="AdaptorDateIng" ColumnName="AdaptorDateIng" />
+          <ScalarProperty Name="AdaptorEstado" ColumnName="AdaptorEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlarmInfomation">
+      <EntityTypeMapping TypeName="SWG1Model.AlarmInfomation">
+        <MappingFragment StoreEntitySet="AlarmInfomation">
+          <ScalarProperty Name="AlarmInfID" ColumnName="AlarmInfID" />
+          <ScalarProperty Name="AlarmInfIDE" ColumnName="AlarmInfIDE" />
+          <ScalarProperty Name="AlarmInfChannel" ColumnName="AlarmInfChannel" />
+          <ScalarProperty Name="AlarmInfState" ColumnName="AlarmInfState" />
+          <ScalarProperty Name="AlarmInfEventType" ColumnName="AlarmInfEventType" />
+          <ScalarProperty Name="AlarmInfRuleID" ColumnName="AlarmInfRuleID" />
+          <ScalarProperty Name="AlarmInTargetID" ColumnName="AlarmInTargetID" />
+          <ScalarProperty Name="AlarmInfTargetType" ColumnName="AlarmInfTargetType" />
+          <ScalarProperty Name="AlarmInfrctTarget" ColumnName="AlarmInfrctTarget" />
+          <ScalarProperty Name="AlarmInfTargetSpeed" ColumnName="AlarmInfTargetSpeed" />
+          <ScalarProperty Name="AlarmInfTargetDirection" ColumnName="AlarmInfTargetDirection" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlarmSentNextiva">
+      <EntityTypeMapping TypeName="SWG1Model.AlarmSentNextiva">
+        <MappingFragment StoreEntitySet="AlarmSentNextiva">
+          <ScalarProperty Name="AlarmSentID" ColumnName="AlarmSentID" />
+          <ScalarProperty Name="AlarmSentIDE" ColumnName="AlarmSentIDE" />
+          <ScalarProperty Name="AlarmSentChannel" ColumnName="AlarmSentChannel" />
+          <ScalarProperty Name="AlarmSentState" ColumnName="AlarmSentState" />
+          <ScalarProperty Name="AlarmSentventType" ColumnName="AlarmSentventType" />
+          <ScalarProperty Name="AlarmSentRuleID" ColumnName="AlarmSentRuleID" />
+          <ScalarProperty Name="AlarmSentTargetID" ColumnName="AlarmSentTargetID" />
+          <ScalarProperty Name="AlarmSentTargetType" ColumnName="AlarmSentTargetType" />
+          <ScalarProperty Name="AlarmSentrctTarget" ColumnName="AlarmSentrctTarget" />
+          <ScalarProperty Name="AlarmSentTargetSpeed" ColumnName="AlarmSentTargetSpeed" />
+          <ScalarProperty Name="AlarmSentTargetDirection" ColumnName="AlarmSentTargetDirection" />
+          <ScalarProperty Name="AlarmSentDateIng" ColumnName="AlarmSentDateIng" />
+          <ScalarProperty Name="AlarmSentDateProcessed" ColumnName="AlarmSentDateProcessed" />
+          <ScalarProperty Name="AlarmSentDescription" ColumnName="AlarmSentDescription" />
+          <ScalarProperty Name="AlarmSentEstado" ColumnName="AlarmSentEstado" />
+          <ScalarProperty Name="CustomerCompanyID" ColumnName="CustomerCompanyID" />
+          <ScalarProperty Name="CusUserID" ColumnName="CusUserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlarmTypeCapturedMovements">
+      <EntityTypeMapping TypeName="SWG1Model.AlarmTypeCapturedMovements">
+        <MappingFragment StoreEntitySet="AlarmTypeCapturedMovements">
+          <ScalarProperty Name="AlarmTypeCapMovID" ColumnName="AlarmTypeCapMovID" />
+          <ScalarProperty Name="AlarmTypeCapMovDescrip" ColumnName="AlarmTypeCapMovDescrip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlertasCapturadas">
+      <EntityTypeMapping TypeName="SWG1Model.AlertasCapturadas">
+        <MappingFragment StoreEntitySet="AlertasCapturadas">
+          <ScalarProperty Name="AlertasCapID" ColumnName="AlertasCapID" />
+          <ScalarProperty Name="AlertasCapIDLogon" ColumnName="AlertasCapIDLogon" />
+          <ScalarProperty Name="AlertasCapIP" ColumnName="AlertasCapIP" />
+          <ScalarProperty Name="AlertasCapUser" ColumnName="AlertasCapUser" />
+          <ScalarProperty Name="AlertasCapPass" ColumnName="AlertasCapPass" />
+          <ScalarProperty Name="AlertasCapChannel" ColumnName="AlertasCapChannel" />
+          <ScalarProperty Name="AlertasCapTCPUDP" ColumnName="AlertasCapTCPUDP" />
+          <ScalarProperty Name="AlertasCapMainSub" ColumnName="AlertasCapMainSub" />
+          <ScalarProperty Name="AlertasCapAlert" ColumnName="AlertasCapAlert" />
+          <ScalarProperty Name="AlertasCapEstado" ColumnName="AlertasCapEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlertasProcesadas">
+      <EntityTypeMapping TypeName="SWG1Model.AlertasProcesadas">
+        <MappingFragment StoreEntitySet="AlertasProcesadas">
+          <ScalarProperty Name="AlertasProcID" ColumnName="AlertasProcID" />
+          <ScalarProperty Name="AlertasProcIDLogon" ColumnName="AlertasProcIDLogon" />
+          <ScalarProperty Name="AlertasProcIP" ColumnName="AlertasProcIP" />
+          <ScalarProperty Name="AlertasProcUser" ColumnName="AlertasProcUser" />
+          <ScalarProperty Name="AlertasProcPass" ColumnName="AlertasProcPass" />
+          <ScalarProperty Name="AlertasProcChannel" ColumnName="AlertasProcChannel" />
+          <ScalarProperty Name="AlertasProcTCPUDP" ColumnName="AlertasProcTCPUDP" />
+          <ScalarProperty Name="AlertasProcMainSub" ColumnName="AlertasProcMainSub" />
+          <ScalarProperty Name="AlertasProcAlert" ColumnName="AlertasProcAlert" />
+          <ScalarProperty Name="AlertasProcEstado" ColumnName="AlertasProcEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Camera">
+      <EntityTypeMapping TypeName="SWG1Model.Camera">
+        <MappingFragment StoreEntitySet="Camera">
+          <ScalarProperty Name="CameraID" ColumnName="CameraID" />
+          <ScalarProperty Name="CameraIDE" ColumnName="CameraIDE" />
+          <ScalarProperty Name="CameraChannel" ColumnName="CameraChannel" />
+          <ScalarProperty Name="CameraIDLogon" ColumnName="CameraIDLogon" />
+          <ScalarProperty Name="CameraIP" ColumnName="CameraIP" />
+          <ScalarProperty Name="CameraUser" ColumnName="CameraUser" />
+          <ScalarProperty Name="CameraPass" ColumnName="CameraPass" />
+          <ScalarProperty Name="CameraPort" ColumnName="CameraPort" />
+          <ScalarProperty Name="CameraEstado" ColumnName="CameraEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CameraPreset">
+      <EntityTypeMapping TypeName="SWG1Model.CameraPreset">
+        <MappingFragment StoreEntitySet="CameraPreset">
+          <ScalarProperty Name="CameraPresetID" ColumnName="CameraPresetID" />
+          <ScalarProperty Name="CameraID" ColumnName="CameraID" />
+          <ScalarProperty Name="CameraPresetChannel" ColumnName="CameraPresetChannel" />
+          <ScalarProperty Name="CameraPresetPresNumber" ColumnName="CameraPresetPresNumber" />
+          <ScalarProperty Name="CameraPresetPresCabecera" ColumnName="CameraPresetPresCabecera" />
+          <ScalarProperty Name="CameraPresetPresArgument" ColumnName="CameraPresetPresArgument" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerCompany">
+      <EntityTypeMapping TypeName="SWG1Model.CustomerCompany">
+        <MappingFragment StoreEntitySet="CustomerCompany">
+          <ScalarProperty Name="CustomerCompanyID" ColumnName="CustomerCompanyID" />
+          <ScalarProperty Name="CustomerCompanyIDE" ColumnName="CustomerCompanyIDE" />
+          <ScalarProperty Name="CustomerCompanyName" ColumnName="CustomerCompanyName" />
+          <ScalarProperty Name="CustomerCompanyDir" ColumnName="CustomerCompanyDir" />
+          <ScalarProperty Name="CustomerCompanyPhone" ColumnName="CustomerCompanyPhone" />
+          <ScalarProperty Name="CustomerCompanyCelPhone" ColumnName="CustomerCompanyCelPhone" />
+          <ScalarProperty Name="CustomerCompanyEmail" ColumnName="CustomerCompanyEmail" />
+          <ScalarProperty Name="CustomerCompanyFax" ColumnName="CustomerCompanyFax" />
+          <ScalarProperty Name="CustomerCompanyWebSite" ColumnName="CustomerCompanyWebSite" />
+          <ScalarProperty Name="CustomerCompanyDateIng" ColumnName="CustomerCompanyDateIng" />
+          <ScalarProperty Name="CustomerCompanyState" ColumnName="CustomerCompanyState" />
+          <ScalarProperty Name="CustomerCompanyShortName" ColumnName="CustomerCompanyShortName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerCompanyCamaras">
+      <EntityTypeMapping TypeName="SWG1Model.CustomerCompanyCamaras">
+        <MappingFragment StoreEntitySet="CustomerCompanyCamaras">
+          <ScalarProperty Name="CustoCompanyCamID" ColumnName="CustoCompanyCamID" />
+          <ScalarProperty Name="CustoCompanyCamDescrip" ColumnName="CustoCompanyCamDescrip" />
+          <ScalarProperty Name="CustoCompanyCamDateIng" ColumnName="CustoCompanyCamDateIng" />
+          <ScalarProperty Name="CustoCompanyCamState" ColumnName="CustoCompanyCamState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerCompanyDataComunication">
+      <EntityTypeMapping TypeName="SWG1Model.CustomerCompanyDataComunication">
+        <MappingFragment StoreEntitySet="CustomerCompanyDataComunication">
+          <ScalarProperty Name="CusCompanyDataID" ColumnName="CusCompanyDataID" />
+          <ScalarProperty Name="CusCompanyDataCameraName" ColumnName="CusCompanyDataCameraName" />
+          <ScalarProperty Name="CusCompanyDataIDE" ColumnName="CusCompanyDataIDE" />
+          <ScalarProperty Name="CusCompanyDataNextNiveles" ColumnName="CusCompanyDataNextNiveles" />
+          <ScalarProperty Name="CusCompanyDataSiteName" ColumnName="CusCompanyDataSiteName" />
+          <ScalarProperty Name="CusCompanyDataNameUrl" ColumnName="CusCompanyDataNameUrl" />
+          <ScalarProperty Name="CusCompanyDataSiteUser" ColumnName="CusCompanyDataSiteUser" />
+          <ScalarProperty Name="CusCompanyDataSitePass" ColumnName="CusCompanyDataSitePass" />
+          <ScalarProperty Name="CusCompanyDataAlarmSite" ColumnName="CusCompanyDataAlarmSite" />
+          <ScalarProperty Name="CusCompanyDataListenResponse" ColumnName="CusCompanyDataListenResponse" />
+          <ScalarProperty Name="CusCompanyDataListenError" ColumnName="CusCompanyDataListenError" />
+          <ScalarProperty Name="CusCompanyDataPathString" ColumnName="CusCompanyDataPathString" />
+          <ScalarProperty Name="CusCompanyDataFileName" ColumnName="CusCompanyDataFileName" />
+          <ScalarProperty Name="CusCompanyDataActivo" ColumnName="CusCompanyDataActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerCompanyShopMap">
+      <EntityTypeMapping TypeName="SWG1Model.CustomerCompanyShopMap">
+        <MappingFragment StoreEntitySet="CustomerCompanyShopMap">
+          <ScalarProperty Name="CustomerCompanyMapID" ColumnName="CustomerCompanyMapID" />
+          <ScalarProperty Name="CustomerCompanyMapDescrip" ColumnName="CustomerCompanyMapDescrip" />
+          <ScalarProperty Name="CustomerCompanyMap" ColumnName="CustomerCompanyMap" />
+          <ScalarProperty Name="CustomerCompanyMapLevel" ColumnName="CustomerCompanyMapLevel" />
+          <ScalarProperty Name="CustomerCompanyMapDateIng" ColumnName="CustomerCompanyMapDateIng" />
+          <ScalarProperty Name="CustomerCompanyMapState" ColumnName="CustomerCompanyMapState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerCompanyShopStore">
+      <EntityTypeMapping TypeName="SWG1Model.CustomerCompanyShopStore">
+        <MappingFragment StoreEntitySet="CustomerCompanyShopStore">
+          <ScalarProperty Name="CustomerCompanyShopID" ColumnName="CustomerCompanyShopID" />
+          <ScalarProperty Name="CustomerCompanyShopDescrip" ColumnName="CustomerCompanyShopDescrip" />
+          <ScalarProperty Name="CustomerCompanyShopDirec" ColumnName="CustomerCompanyShopDirec" />
+          <ScalarProperty Name="CustomerCompanyShopPhone" ColumnName="CustomerCompanyShopPhone" />
+          <ScalarProperty Name="CustomerCompanyShopCelPhone" ColumnName="CustomerCompanyShopCelPhone" />
+          <ScalarProperty Name="CustomerCompanyShopEmail" ColumnName="CustomerCompanyShopEmail" />
+          <ScalarProperty Name="CustomerCompanyShopFax" ColumnName="CustomerCompanyShopFax" />
+          <ScalarProperty Name="CustomerCompanyShopDateIng" ColumnName="CustomerCompanyShopDateIng" />
+          <ScalarProperty Name="CustomerCompanyShopState" ColumnName="CustomerCompanyShopState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerCompanyTypeMap">
+      <EntityTypeMapping TypeName="SWG1Model.CustomerCompanyTypeMap">
+        <MappingFragment StoreEntitySet="CustomerCompanyTypeMap">
+          <ScalarProperty Name="CustCompanyTypeMapID" ColumnName="CustCompanyTypeMapID" />
+          <ScalarProperty Name="CustCompanyTypeMapDesc" ColumnName="CustCompanyTypeMapDesc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerPrivilegesOptions">
+      <EntityTypeMapping TypeName="SWG1Model.CustomerPrivilegesOptions">
+        <MappingFragment StoreEntitySet="CustomerPrivilegesOptions">
+          <ScalarProperty Name="CusSitePrivOptionID" ColumnName="CusSitePrivOptionID" />
+          <ScalarProperty Name="CusSitePrivOptionDesc" ColumnName="CusSitePrivOptionDesc" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerSitePrivileges">
+      <EntityTypeMapping TypeName="SWG1Model.CustomerSitePrivileges">
+        <MappingFragment StoreEntitySet="CustomerSitePrivileges">
+          <ScalarProperty Name="CusSitePrivID" ColumnName="CusSitePrivID" />
+          <ScalarProperty Name="CusSitePrivDescrip" ColumnName="CusSitePrivDescrip" />
+          <ScalarProperty Name="CustomerPrivObser" ColumnName="CustomerPrivObser" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerTypeUser">
+      <EntityTypeMapping TypeName="SWG1Model.CustomerTypeUser">
+        <MappingFragment StoreEntitySet="CustomerTypeUser">
+          <ScalarProperty Name="CusUserTypeID" ColumnName="CusUserTypeID" />
+          <ScalarProperty Name="CusUserTypeDescrip" ColumnName="CusUserTypeDescrip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerUsers">
+      <EntityTypeMapping TypeName="SWG1Model.CustomerUsers">
+        <MappingFragment StoreEntitySet="CustomerUsers">
+          <ScalarProperty Name="CusUserID" ColumnName="CusUserID" />
+          <ScalarProperty Name="CusUserIDE" ColumnName="CusUserIDE" />
+          <ScalarProperty Name="CusUserNames" ColumnName="CusUserNames" />
+          <ScalarProperty Name="CusUserLastNames" ColumnName="CusUserLastNames" />
+          <ScalarProperty Name="CusUserUser" ColumnName="CusUserUser" />
+          <ScalarProperty Name="CusUserPass" ColumnName="CusUserPass" />
+          <ScalarProperty Name="CusUserDateIn" ColumnName="CusUserDateIn" />
+          <ScalarProperty Name="CusUserAllowQuest" ColumnName="CusUserAllowQuest" />
+          <ScalarProperty Name="CusUserAllowUpdate" ColumnName="CusUserAllowUpdate" />
+          <ScalarProperty Name="CusUserAllowDel" ColumnName="CusUserAllowDel" />
+          <ScalarProperty Name="CusUserAllowInsert" ColumnName="CusUserAllowInsert" />
+          <ScalarProperty Name="CusUserPhoto" ColumnName="CusUserPhoto" />
+          <ScalarProperty Name="CusUserState" ColumnName="CusUserState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Device">
+      <EntityTypeMapping TypeName="SWG1Model.Device">
+        <MappingFragment StoreEntitySet="Device">
+          <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+          <ScalarProperty Name="DeviceIDE" ColumnName="DeviceIDE" />
+          <ScalarProperty Name="DeviceNameDescrip" ColumnName="DeviceNameDescrip" />
+          <ScalarProperty Name="DeviceChannel" ColumnName="DeviceChannel" />
+          <ScalarProperty Name="DeviceIDLogon" ColumnName="DeviceIDLogon" />
+          <ScalarProperty Name="DeviceIP" ColumnName="DeviceIP" />
+          <ScalarProperty Name="DeviceUser" ColumnName="DeviceUser" />
+          <ScalarProperty Name="DevicePass" ColumnName="DevicePass" />
+          <ScalarProperty Name="DevicePort" ColumnName="DevicePort" />
+          <ScalarProperty Name="DeviceDateIng" ColumnName="DeviceDateIng" />
+          <ScalarProperty Name="DeviceEstado" ColumnName="DeviceEstado" />
+          <ScalarProperty Name="SystemDeviceID" ColumnName="SystemDeviceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Errores">
+      <EntityTypeMapping TypeName="SWG1Model.Errores">
+        <MappingFragment StoreEntitySet="Errores">
+          <ScalarProperty Name="IdError" ColumnName="IdError" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Mensaje" ColumnName="Mensaje" />
+          <ScalarProperty Name="Resuelto" ColumnName="Resuelto" />
+          <ScalarProperty Name="NumeroError" ColumnName="NumeroError" />
+          <ScalarProperty Name="Modulo" ColumnName="Modulo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GI_Perfil">
+      <EntityTypeMapping TypeName="SWG1Model.GI_Perfil">
+        <MappingFragment StoreEntitySet="GI_Perfil">
+          <ScalarProperty Name="PerfilID" ColumnName="PerfilID" />
+          <ScalarProperty Name="PerfilDescrip" ColumnName="PerfilDescrip" />
+          <ScalarProperty Name="PerfilSistema" ColumnName="PerfilSistema" />
+          <ScalarProperty Name="PerfilFechaMod" ColumnName="PerfilFechaMod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GI_PerfilOpciones">
+      <EntityTypeMapping TypeName="SWG1Model.GI_PerfilOpciones">
+        <MappingFragment StoreEntitySet="GI_PerfilOpciones">
+          <ScalarProperty Name="PerfilOpcionesID" ColumnName="PerfilOpcionesID" />
+          <ScalarProperty Name="PerfilOpcionDesc" ColumnName="PerfilOpcionDesc" />
+          <ScalarProperty Name="PerfilOpcionFechaIng" ColumnName="PerfilOpcionFechaIng" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GI_Sistema">
+      <EntityTypeMapping TypeName="SWG1Model.GI_Sistema">
+        <MappingFragment StoreEntitySet="GI_Sistema">
+          <ScalarProperty Name="SistemaID" ColumnName="SistemaID" />
+          <ScalarProperty Name="SistemaDescrip" ColumnName="SistemaDescrip" />
+          <ScalarProperty Name="SistemaEstado" ColumnName="SistemaEstado" />
+          <ScalarProperty Name="SistemaFechaIng" ColumnName="SistemaFechaIng" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GI_Usuario">
+      <EntityTypeMapping TypeName="SWG1Model.GI_Usuario">
+        <MappingFragment StoreEntitySet="GI_Usuario">
+          <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+          <ScalarProperty Name="UsuarioRut" ColumnName="UsuarioRut" />
+          <ScalarProperty Name="UsuarioNombre" ColumnName="UsuarioNombre" />
+          <ScalarProperty Name="UsuarioApellidos" ColumnName="UsuarioApellidos" />
+          <ScalarProperty Name="UsuarioUser" ColumnName="UsuarioUser" />
+          <ScalarProperty Name="UsuarioPass" ColumnName="UsuarioPass" />
+          <ScalarProperty Name="UsuarioFechaIng" ColumnName="UsuarioFechaIng" />
+          <ScalarProperty Name="UsuarioPermisoCon" ColumnName="UsuarioPermisoCon" />
+          <ScalarProperty Name="UsuarioPermisoMod" ColumnName="UsuarioPermisoMod" />
+          <ScalarProperty Name="UsuarioPermisoDel" ColumnName="UsuarioPermisoDel" />
+          <ScalarProperty Name="UsuarioPermisoIng" ColumnName="UsuarioPermisoIng" />
+          <ScalarProperty Name="UsuarioFoto" ColumnName="UsuarioFoto" />
+          <ScalarProperty Name="UsuarioEstado" ColumnName="UsuarioEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GI_UsuarioPerfil">
+      <EntityTypeMapping TypeName="SWG1Model.GI_UsuarioPerfil">
+        <MappingFragment StoreEntitySet="GI_UsuarioPerfil">
+          <ScalarProperty Name="UsuarioPerfilID" ColumnName="UsuarioPerfilID" />
+          <ScalarProperty Name="UsuarioPerfilDescrip" ColumnName="UsuarioPerfilDescrip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GI_UsuarioTipo">
+      <EntityTypeMapping TypeName="SWG1Model.GI_UsuarioTipo">
+        <MappingFragment StoreEntitySet="GI_UsuarioTipo">
+          <ScalarProperty Name="UsuarioTipoID" ColumnName="UsuarioTipoID" />
+          <ScalarProperty Name="UsuarioTipoDescrip" ColumnName="UsuarioTipoDescrip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_Ciudad">
+      <EntityTypeMapping TypeName="SWG1Model.GIC_Ciudad">
+        <MappingFragment StoreEntitySet="GIC_Ciudad">
+          <ScalarProperty Name="CiudadID" ColumnName="CiudadID" />
+          <ScalarProperty Name="CiudadNombre" ColumnName="CiudadNombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_Comuna">
+      <EntityTypeMapping TypeName="SWG1Model.GIC_Comuna">
+        <MappingFragment StoreEntitySet="GIC_Comuna">
+          <ScalarProperty Name="ComunaID" ColumnName="ComunaID" />
+          <ScalarProperty Name="ComunaNombre" ColumnName="ComunaNombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_Pais">
+      <EntityTypeMapping TypeName="SWG1Model.GIC_Pais">
+        <MappingFragment StoreEntitySet="GIC_Pais">
+          <ScalarProperty Name="PaisID" ColumnName="PaisID" />
+          <ScalarProperty Name="PaisNombre" ColumnName="PaisNombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_Provincia">
+      <EntityTypeMapping TypeName="SWG1Model.GIC_Provincia">
+        <MappingFragment StoreEntitySet="GIC_Provincia">
+          <ScalarProperty Name="ProvinciaID" ColumnName="ProvinciaID" />
+          <ScalarProperty Name="ProvinciaNombre" ColumnName="ProvinciaNombre" />
+          <ScalarProperty Name="Capital" ColumnName="Capital" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_Region">
+      <EntityTypeMapping TypeName="SWG1Model.GIC_Region">
+        <MappingFragment StoreEntitySet="GIC_Region">
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="Region_numero_romano" ColumnName="Region_numero_romano" />
+          <ScalarProperty Name="RegionNombre" ColumnName="RegionNombre" />
+          <ScalarProperty Name="Capital" ColumnName="Capital" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IbeaconLocationCustomerClientShop">
+      <EntityTypeMapping TypeName="SWG1Model.IbeaconLocationCustomerClientShop">
+        <MappingFragment StoreEntitySet="IbeaconLocationCustomerClientShop">
+          <ScalarProperty Name="IbeaconLocatCusID" ColumnName="IbeaconLocatCusID" />
+          <ScalarProperty Name="IbeaconLocatCusDeviceIDE" ColumnName="IbeaconLocatCusDeviceIDE" />
+          <ScalarProperty Name="IbeaconLocatCusDeviceName" ColumnName="IbeaconLocatCusDeviceName" />
+          <ScalarProperty Name="IbeaconLocatCusDeviceNumberCel" ColumnName="IbeaconLocatCusDeviceNumberCel" />
+          <ScalarProperty Name="IbeaconLocatCusObsDescrip" ColumnName="IbeaconLocatCusObsDescrip" />
+          <ScalarProperty Name="IbeaconLocatCusObsTarget" ColumnName="IbeaconLocatCusObsTarget" />
+          <ScalarProperty Name="IbeaconLocatCusDateIng" ColumnName="IbeaconLocatCusDateIng" />
+          <ScalarProperty Name="IbeaconLocatCusState" ColumnName="IbeaconLocatCusState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NextivaEventPreset">
+      <EntityTypeMapping TypeName="SWG1Model.NextivaEventPreset">
+        <MappingFragment StoreEntitySet="NextivaEventPreset">
+          <ScalarProperty Name="NextivaPresEventID" ColumnName="NextivaPresEventID" />
+          <ScalarProperty Name="NextivaPresEventNumber" ColumnName="NextivaPresEventNumber" />
+          <ScalarProperty Name="NextivaPresEventDescrip" ColumnName="NextivaPresEventDescrip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NextivaRulesPresentsAlarms">
+      <EntityTypeMapping TypeName="SWG1Model.NextivaRulesPresentsAlarms">
+        <MappingFragment StoreEntitySet="NextivaRulesPresentsAlarms">
+          <ScalarProperty Name="NextivaRulesPresentID" ColumnName="NextivaRulesPresentID" />
+          <ScalarProperty Name="NextivaRulesPresentDescrip" ColumnName="NextivaRulesPresentDescrip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sistemas">
+      <EntityTypeMapping TypeName="SWG1Model.Sistemas">
+        <MappingFragment StoreEntitySet="Sistemas">
+          <ScalarProperty Name="IdSistema" ColumnName="IdSistema" />
+          <ScalarProperty Name="Sistema" ColumnName="Sistema" />
+          <ScalarProperty Name="EnvioAlarma" ColumnName="EnvioAlarma" />
+          <ScalarProperty Name="Tecnologia" ColumnName="Tecnologia" />
+          <ScalarProperty Name="AlarmaEmailTo" ColumnName="AlarmaEmailTo" />
+          <ScalarProperty Name="AlarmaEmailCC" ColumnName="AlarmaEmailCC" />
+          <ScalarProperty Name="AlarmaEmailBCC" ColumnName="AlarmaEmailBCC" />
+          <ScalarProperty Name="RespaldoEmailTo" ColumnName="RespaldoEmailTo" />
+          <ScalarProperty Name="RespaldoEmailCC" ColumnName="RespaldoEmailCC" />
+          <ScalarProperty Name="RespaldoEmailBCC" ColumnName="RespaldoEmailBCC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="SWG1Model.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SystemDevice">
+      <EntityTypeMapping TypeName="SWG1Model.SystemDevice">
+        <MappingFragment StoreEntitySet="SystemDevice">
+          <ScalarProperty Name="SystemDeviceID" ColumnName="SystemDeviceID" />
+          <ScalarProperty Name="SystemDeviceDescrip" ColumnName="SystemDeviceDescrip" />
+          <ScalarProperty Name="SystemDeviceUser" ColumnName="SystemDeviceUser" />
+          <ScalarProperty Name="SystemDevicePass" ColumnName="SystemDevicePass" />
+          <ScalarProperty Name="SystemDeviceDateIng" ColumnName="SystemDeviceDateIng" />
+          <ScalarProperty Name="SystemDeviceEstado" ColumnName="SystemDeviceEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SystemOpcionDetails">
+      <EntityTypeMapping TypeName="SWG1Model.SystemOpcionDetails">
+        <MappingFragment StoreEntitySet="SystemOpcionDetails">
+          <ScalarProperty Name="SystemOpcionDetailID" ColumnName="SystemOpcionDetailID" />
+          <ScalarProperty Name="SystemOpcionDetailDesc" ColumnName="SystemOpcionDetailDesc" />
+          <ScalarProperty Name="SystemOpcionDetailState" ColumnName="SystemOpcionDetailState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SystemOpcions">
+      <EntityTypeMapping TypeName="SWG1Model.SystemOpcions">
+        <MappingFragment StoreEntitySet="SystemOpcions">
+          <ScalarProperty Name="SystemOpcionID" ColumnName="SystemOpcionID" />
+          <ScalarProperty Name="SystemOpcionDesc" ColumnName="SystemOpcionDesc" />
+          <ScalarProperty Name="SystemOpcionState" ColumnName="SystemOpcionState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SystemTypeConfig">
+      <EntityTypeMapping TypeName="SWG1Model.SystemTypeConfig">
+        <MappingFragment StoreEntitySet="SystemTypeConfig">
+          <ScalarProperty Name="SystemTypeConfigID" ColumnName="SystemTypeConfigID" />
+          <ScalarProperty Name="SystemTypeConfigDesc" ColumnName="SystemTypeConfigDesc" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrackingLogSystem">
+      <EntityTypeMapping TypeName="SWG1Model.TrackingLogSystem">
+        <MappingFragment StoreEntitySet="TrackingLogSystem">
+          <ScalarProperty Name="TrackingID" ColumnName="TrackingID" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IdSistema" ColumnName="IdSistema" />
+          <ScalarProperty Name="ActionMensaje" ColumnName="ActionMensaje" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="NumeroError" ColumnName="NumeroError" />
+          <ScalarProperty Name="Modulo" ColumnName="Modulo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeDevice">
+      <EntityTypeMapping TypeName="SWG1Model.TypeDevice">
+        <MappingFragment StoreEntitySet="TypeDevice">
+          <ScalarProperty Name="TypeDeviceID" ColumnName="TypeDeviceID" />
+          <ScalarProperty Name="TypeDeviceDescrip" ColumnName="TypeDeviceDescrip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeRuleNextiva">
+      <EntityTypeMapping TypeName="SWG1Model.TypeRuleNextiva">
+        <MappingFragment StoreEntitySet="TypeRuleNextiva">
+          <ScalarProperty Name="TypeRuleID" ColumnName="TypeRuleID" />
+          <ScalarProperty Name="TypeRuleNumber" ColumnName="TypeRuleNumber" />
+          <ScalarProperty Name="TypeRuleDescrip" ColumnName="TypeRuleDescrip" />
+          <ScalarProperty Name="TypeRuleShortDescrip" ColumnName="TypeRuleShortDescrip" />
+          <ScalarProperty Name="TypeRuleTechnicalNameSDK" ColumnName="TypeRuleTechnicalNameSDK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VCARulesAlarms">
+      <EntityTypeMapping TypeName="SWG1Model.VCARulesAlarms">
+        <MappingFragment StoreEntitySet="VCARulesAlarms">
+          <ScalarProperty Name="NextivaRulesID" ColumnName="NextivaRulesID" />
+          <ScalarProperty Name="NextivaRulesNumber" ColumnName="NextivaRulesNumber" />
+          <ScalarProperty Name="NextivaRulesDescripcion" ColumnName="NextivaRulesDescripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="XMLNextiva">
+      <EntityTypeMapping TypeName="SWG1Model.XMLNextiva">
+        <MappingFragment StoreEntitySet="XMLNextiva">
+          <ScalarProperty Name="XMLNextID" ColumnName="XMLNextID" />
+          <ScalarProperty Name="XMLNextNiveles" ColumnName="XMLNextNiveles" />
+          <ScalarProperty Name="XMLNextSiteName" ColumnName="XMLNextSiteName" />
+          <ScalarProperty Name="XMLNextSiteNameUrl" ColumnName="XMLNextSiteNameUrl" />
+          <ScalarProperty Name="XMLNextSiteUser" ColumnName="XMLNextSiteUser" />
+          <ScalarProperty Name="XMLNextSitePass" ColumnName="XMLNextSitePass" />
+          <ScalarProperty Name="XMLNextAlarmSite" ColumnName="XMLNextAlarmSite" />
+          <ScalarProperty Name="XMLNextListenResponse" ColumnName="XMLNextListenResponse" />
+          <ScalarProperty Name="XMLNextListenError" ColumnName="XMLNextListenError" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="XMLNextivaChannels">
+      <EntityTypeMapping TypeName="SWG1Model.XMLNextivaChannels">
+        <MappingFragment StoreEntitySet="XMLNextivaChannels">
+          <ScalarProperty Name="XMLNextChannelID" ColumnName="XMLNextChannelID" />
+          <ScalarProperty Name="XMLNextChannel" ColumnName="XMLNextChannel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="XMLNextivaEventPreset">
+      <EntityTypeMapping TypeName="SWG1Model.XMLNextivaEventPreset">
+        <MappingFragment StoreEntitySet="XMLNextivaEventPreset">
+          <ScalarProperty Name="XMLNextivaPreslID" ColumnName="XMLNextivaPreslID" />
+          <ScalarProperty Name="XMLNextivaPresNumber" ColumnName="XMLNextivaPresNumber" />
+          <ScalarProperty Name="XMLNextivaPresCabecera" ColumnName="XMLNextivaPresCabecera" />
+          <ScalarProperty Name="XMLNextivaPresArgument" ColumnName="XMLNextivaPresArgument" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="XMLNextivaPorts">
+      <EntityTypeMapping TypeName="SWG1Model.XMLNextivaPorts">
+        <MappingFragment StoreEntitySet="XMLNextivaPorts">
+          <ScalarProperty Name="XMLNextPortID" ColumnName="XMLNextPortID" />
+          <ScalarProperty Name="XMLNextPorts" ColumnName="XMLNextPorts" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_CustomerCompanyCamaras_Camera" TypeName="SWG1Model.FK_CustomerCompanyCamaras_Camera" StoreEntitySet="CustomerCompanyCamaras">
+      <EndProperty Name="Camera">
+        <ScalarProperty Name="CameraID" ColumnName="CameraID" />
+      </EndProperty>
+      <EndProperty Name="CustomerCompanyCamaras">
+        <ScalarProperty Name="CustoCompanyCamID" ColumnName="CustoCompanyCamID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CustomerCompany_GIC_Ciudad" TypeName="SWG1Model.FK_CustomerCompany_GIC_Ciudad" StoreEntitySet="CustomerCompany">
+      <EndProperty Name="GIC_Ciudad">
+        <ScalarProperty Name="CiudadID" ColumnName="CiudadID" />
+      </EndProperty>
+      <EndProperty Name="CustomerCompany">
+        <ScalarProperty Name="CustomerCompanyID" ColumnName="CustomerCompanyID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CustomerCompanyCamaras_CustomerCompany" TypeName="SWG1Model.FK_CustomerCompanyCamaras_CustomerCompany" StoreEntitySet="CustomerCompanyCamaras">
+      <EndProperty Name="CustomerCompany">
+        <ScalarProperty Name="CustomerCompanyID" ColumnName="CustomerCompanyID" />
+      </EndProperty>
+      <EndProperty Name="CustomerCompanyCamaras">
+        <ScalarProperty Name="CustoCompanyCamID" ColumnName="CustoCompanyCamID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CustomerCompanyDataComunication_CustomerCompany" TypeName="SWG1Model.FK_CustomerCompanyDataComunication_CustomerCompany" StoreEntitySet="CustomerCompanyDataComunication">
+      <EndProperty Name="CustomerCompany">
+        <ScalarProperty Name="CustomerCompanyID" ColumnName="CustomerCompanyID" />
+      </EndProperty>
+      <EndProperty Name="CustomerCompanyDataComunication">
+        <ScalarProperty Name="CusCompanyDataID" ColumnName="CusCompanyDataID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CustomerCompanyShopStore_CustomerCompany" TypeName="SWG1Model.FK_CustomerCompanyShopStore_CustomerCompany" StoreEntitySet="CustomerCompanyShopStore">
+      <EndProperty Name="CustomerCompany">
+        <ScalarProperty Name="CustomerCompanyID" ColumnName="CustomerCompanyID" />
+      </EndProperty>
+      <EndProperty Name="CustomerCompanyShopStore">
+        <ScalarProperty Name="CustomerCompanyShopID" ColumnName="CustomerCompanyShopID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CustomerUsers_CustomerCompany" TypeName="SWG1Model.FK_CustomerUsers_CustomerCompany" StoreEntitySet="CustomerUsers">
+      <EndProperty Name="CustomerCompany">
+        <ScalarProperty Name="CustomerCompanyID" ColumnName="CustomerCompanyID" />
+      </EndProperty>
+      <EndProperty Name="CustomerUsers">
+        <ScalarProperty Name="CusUserID" ColumnName="CusUserID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Device_CustomerCompany" TypeName="SWG1Model.FK_Device_CustomerCompany" StoreEntitySet="Device">
+      <EndProperty Name="CustomerCompany">
+        <ScalarProperty Name="CustomerCompanyID" ColumnName="CustomerCompanyID" />
+      </EndProperty>
+      <EndProperty Name="Device">
+        <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CustomerSitePrivileges_CustomerCompanyDataComunication" TypeName="SWG1Model.FK_CustomerSitePrivileges_CustomerCompanyDataComunication" StoreEntitySet="CustomerSitePrivileges">
+      <EndProperty Name="CustomerCompanyDataComunication">
+        <ScalarProperty Name="CusCompanyDataID" ColumnName="CusCompanyDataID" />
+      </EndProperty>
+      <EndProperty Name="CustomerSitePrivileges">
+        <ScalarProperty Name="CusSitePrivID" ColumnName="CusSitePrivID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CustomerCompanyShopMap_CustomerCompanyShopStore" TypeName="SWG1Model.FK_CustomerCompanyShopMap_CustomerCompanyShopStore" StoreEntitySet="CustomerCompanyShopMap">
+      <EndProperty Name="CustomerCompanyShopStore">
+        <ScalarProperty Name="CustomerCompanyShopID" ColumnName="CustomerCompanyShopID" />
+      </EndProperty>
+      <EndProperty Name="CustomerCompanyShopMap">
+        <ScalarProperty Name="CustomerCompanyMapID" ColumnName="CustomerCompanyMapID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CustomerCompanyShopMap_CustomerCompanyTypeMap" TypeName="SWG1Model.FK_CustomerCompanyShopMap_CustomerCompanyTypeMap" StoreEntitySet="CustomerCompanyShopMap">
+      <EndProperty Name="CustomerCompanyTypeMap">
+        <ScalarProperty Name="CustCompanyTypeMapID" ColumnName="CustCompanyTypeMapID" />
+      </EndProperty>
+      <EndProperty Name="CustomerCompanyShopMap">
+        <ScalarProperty Name="CustomerCompanyMapID" ColumnName="CustomerCompanyMapID" />
+      </EndProperty>
+      <Condition ColumnName="CustCompanyTypeMapID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CustomerCompanyShopStore_GIC_Ciudad" TypeName="SWG1Model.FK_CustomerCompanyShopStore_GIC_Ciudad" StoreEntitySet="CustomerCompanyShopStore">
+      <EndProperty Name="GIC_Ciudad">
+        <ScalarProperty Name="CiudadID" ColumnName="CiudadID" />
+      </EndProperty>
+      <EndProperty Name="CustomerCompanyShopStore">
+        <ScalarProperty Name="CustomerCompanyShopID" ColumnName="CustomerCompanyShopID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_IbeaconLocationCustomerClientShop_CustomerCompanyShopStore" TypeName="SWG1Model.FK_IbeaconLocationCustomerClientShop_CustomerCompanyShopStore" StoreEntitySet="IbeaconLocationCustomerClientShop">
+      <EndProperty Name="CustomerCompanyShopStore">
+        <ScalarProperty Name="CustomerCompanyShopID" ColumnName="CustomerCompanyShopID" />
+      </EndProperty>
+      <EndProperty Name="IbeaconLocationCustomerClientShop">
+        <ScalarProperty Name="IbeaconLocatCusID" ColumnName="IbeaconLocatCusID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CustomerPrivilegesOptions_CustomerSitePrivileges" TypeName="SWG1Model.FK_CustomerPrivilegesOptions_CustomerSitePrivileges" StoreEntitySet="CustomerPrivilegesOptions">
+      <EndProperty Name="CustomerSitePrivileges">
+        <ScalarProperty Name="CusSitePrivID" ColumnName="CusSitePrivID" />
+      </EndProperty>
+      <EndProperty Name="CustomerPrivilegesOptions">
+        <ScalarProperty Name="CusSitePrivOptionID" ColumnName="CusSitePrivOptionID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CustomerUsers_CustomerTypeUser" TypeName="SWG1Model.FK_CustomerUsers_CustomerTypeUser" StoreEntitySet="CustomerUsers">
+      <EndProperty Name="CustomerTypeUser">
+        <ScalarProperty Name="CusUserTypeID" ColumnName="CusUserTypeID" />
+      </EndProperty>
+      <EndProperty Name="CustomerUsers">
+        <ScalarProperty Name="CusUserID" ColumnName="CusUserID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Device_TypeDevice" TypeName="SWG1Model.FK_Device_TypeDevice" StoreEntitySet="Device">
+      <EndProperty Name="TypeDevice">
+        <ScalarProperty Name="TypeDeviceID" ColumnName="TypeDeviceID" />
+      </EndProperty>
+      <EndProperty Name="Device">
+        <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_GI_Errores_Sistemas" TypeName="SWG1Model.FK_GI_Errores_Sistemas" StoreEntitySet="Errores">
+      <EndProperty Name="Sistemas">
+        <ScalarProperty Name="IdSistema" ColumnName="IdSistema" />
+      </EndProperty>
+      <EndProperty Name="Errores">
+        <ScalarProperty Name="IdError" ColumnName="IdError" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_GI_PerfilOpciones_GI_Perfil" TypeName="SWG1Model.FK_GI_PerfilOpciones_GI_Perfil" StoreEntitySet="GI_PerfilOpciones">
+      <EndProperty Name="GI_Perfil">
+        <ScalarProperty Name="PerfilID" ColumnName="PerfilID" />
+      </EndProperty>
+      <EndProperty Name="GI_PerfilOpciones">
+        <ScalarProperty Name="PerfilOpcionesID" ColumnName="PerfilOpcionesID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_GI_UsuarioPerfil_GI_Perfil" TypeName="SWG1Model.FK_GI_UsuarioPerfil_GI_Perfil" StoreEntitySet="GI_UsuarioPerfil">
+      <EndProperty Name="GI_Perfil">
+        <ScalarProperty Name="PerfilID" ColumnName="PerfilID" />
+      </EndProperty>
+      <EndProperty Name="GI_UsuarioPerfil">
+        <ScalarProperty Name="UsuarioPerfilID" ColumnName="UsuarioPerfilID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_GI_Usuario_GI_UsuarioTipo" TypeName="SWG1Model.FK_GI_Usuario_GI_UsuarioTipo" StoreEntitySet="GI_Usuario">
+      <EndProperty Name="GI_UsuarioTipo">
+        <ScalarProperty Name="UsuarioTipoID" ColumnName="UsuarioTipoID" />
+      </EndProperty>
+      <EndProperty Name="GI_Usuario">
+        <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_GI_UsuarioPerfil_GI_Usuario" TypeName="SWG1Model.FK_GI_UsuarioPerfil_GI_Usuario" StoreEntitySet="GI_UsuarioPerfil">
+      <EndProperty Name="GI_Usuario">
+        <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+      </EndProperty>
+      <EndProperty Name="GI_UsuarioPerfil">
+        <ScalarProperty Name="UsuarioPerfilID" ColumnName="UsuarioPerfilID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_GI_UsuarioPerfil_Sistemas" TypeName="SWG1Model.FK_GI_UsuarioPerfil_Sistemas" StoreEntitySet="GI_UsuarioPerfil">
+      <EndProperty Name="Sistemas">
+        <ScalarProperty Name="IdSistema" ColumnName="SistemaID" />
+      </EndProperty>
+      <EndProperty Name="GI_UsuarioPerfil">
+        <ScalarProperty Name="UsuarioPerfilID" ColumnName="UsuarioPerfilID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_GI_Ciudad_GI_Region" TypeName="SWG1Model.FK_GI_Ciudad_GI_Region" StoreEntitySet="GIC_Ciudad">
+      <EndProperty Name="GIC_Region">
+        <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+      </EndProperty>
+      <EndProperty Name="GIC_Ciudad">
+        <ScalarProperty Name="CiudadID" ColumnName="CiudadID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_GIC_Comuna_GIC_Provincia" TypeName="SWG1Model.FK_GIC_Comuna_GIC_Provincia" StoreEntitySet="GIC_Comuna">
+      <EndProperty Name="GIC_Provincia">
+        <ScalarProperty Name="ProvinciaID" ColumnName="ProvinciaID" />
+      </EndProperty>
+      <EndProperty Name="GIC_Comuna">
+        <ScalarProperty Name="ComunaID" ColumnName="ComunaID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_GIC_Region_GIC_Pais" TypeName="SWG1Model.FK_GIC_Region_GIC_Pais" StoreEntitySet="GIC_Region">
+      <EndProperty Name="GIC_Pais">
+        <ScalarProperty Name="PaisID" ColumnName="PaisID" />
+      </EndProperty>
+      <EndProperty Name="GIC_Region">
+        <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+      </EndProperty>
+      <Condition ColumnName="PaisID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_GI_provincias_GI_regiones" TypeName="SWG1Model.FK_GI_provincias_GI_regiones" StoreEntitySet="GIC_Provincia">
+      <EndProperty Name="GIC_Region">
+        <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+      </EndProperty>
+      <EndProperty Name="GIC_Provincia">
+        <ScalarProperty Name="ProvinciaID" ColumnName="ProvinciaID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_NextivaRulesPresentsAlarms012" TypeName="SWG1Model.FK_NextivaRulesPresentsAlarms012" StoreEntitySet="NextivaRulesPresentsAlarms">
+      <EndProperty Name="NextivaEventPreset">
+        <ScalarProperty Name="NextivaPresEventID" ColumnName="NextivaPresEventID" />
+      </EndProperty>
+      <EndProperty Name="NextivaRulesPresentsAlarms">
+        <ScalarProperty Name="NextivaRulesPresentID" ColumnName="NextivaRulesPresentID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_NextivaRulesPresentsAlarms" TypeName="SWG1Model.FK_NextivaRulesPresentsAlarms" StoreEntitySet="NextivaRulesPresentsAlarms">
+      <EndProperty Name="VCARulesAlarms">
+        <ScalarProperty Name="NextivaRulesID" ColumnName="NextivaRulesID" />
+      </EndProperty>
+      <EndProperty Name="NextivaRulesPresentsAlarms">
+        <ScalarProperty Name="NextivaRulesPresentID" ColumnName="NextivaRulesPresentID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_SystemOpcionDetails_SystemOpcions" TypeName="SWG1Model.FK_SystemOpcionDetails_SystemOpcions" StoreEntitySet="SystemOpcionDetails">
+      <EndProperty Name="SystemOpcions">
+        <ScalarProperty Name="SystemOpcionID" ColumnName="SystemOpcionID" />
+      </EndProperty>
+      <EndProperty Name="SystemOpcionDetails">
+        <ScalarProperty Name="SystemOpcionDetailID" ColumnName="SystemOpcionDetailID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_SystemOpcions_SystemTypeConfig" TypeName="SWG1Model.FK_SystemOpcions_SystemTypeConfig" StoreEntitySet="SystemOpcions">
+      <EndProperty Name="SystemTypeConfig">
+        <ScalarProperty Name="SystemTypeConfigID" ColumnName="SystemTypeConfigID" />
+      </EndProperty>
+      <EndProperty Name="SystemOpcions">
+        <ScalarProperty Name="SystemOpcionID" ColumnName="SystemOpcionID" />
+      </EndProperty>
+      <Condition ColumnName="SystemTypeConfigID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_XMLNextivaChannels" TypeName="SWG1Model.FK_XMLNextivaChannels" StoreEntitySet="XMLNextivaChannels">
+      <EndProperty Name="XMLNextiva">
+        <ScalarProperty Name="XMLNextID" ColumnName="XMLNextID" />
+      </EndProperty>
+      <EndProperty Name="XMLNextivaChannels">
+        <ScalarProperty Name="XMLNextChannelID" ColumnName="XMLNextChannelID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_XMLNextivaEventPreset" TypeName="SWG1Model.FK_XMLNextivaEventPreset" StoreEntitySet="XMLNextivaEventPreset">
+      <EndProperty Name="XMLNextiva">
+        <ScalarProperty Name="XMLNextID" ColumnName="XMLNextID" />
+      </EndProperty>
+      <EndProperty Name="XMLNextivaEventPreset">
+        <ScalarProperty Name="XMLNextivaPreslID" ColumnName="XMLNextivaPreslID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_XMLNextivaPorts" TypeName="SWG1Model.FK_XMLNextivaPorts" StoreEntitySet="XMLNextivaPorts">
+      <EndProperty Name="XMLNextiva">
+        <ScalarProperty Name="XMLNextID" ColumnName="XMLNextID" />
+      </EndProperty>
+      <EndProperty Name="XMLNextivaPorts">
+        <ScalarProperty Name="XMLNextPortID" ColumnName="XMLNextPortID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3DEA5D23-D3F3-4D39-9255-81017CBCF62F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Business</RootNamespace>
+    <AssemblyName>Business</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DataAccess\bin\Debug\DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Entities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DataAccess\bin\Debug\Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdaptorBF.cs" />
+    <Compile Include="CameraBF.cs" />
+    <Compile Include="CamerasEventPresentBF.cs" />
+    <Compile Include="CiudadBF.cs" />
+    <Compile Include="Base64BF.cs" />
+    <Compile Include="ClaseConexionSockets.cs" />
+    <Compile Include="CustomerCompanyBF.cs" />
+    <Compile Include="CustomerCompanyDataComuniBF.cs" />
+    <Compile Include="CustomerCompanyShopMapBF.cs" />
+    <Compile Include="CustomerCompanyShopStoreBF.cs" />
+    <Compile Include="CustomerCompanyTypeMapBF.cs" />
+    <Compile Include="CustomerPrivilegesOptionsBF.cs" />
+    <Compile Include="CustomerSitePrivilegesBF.cs" />
+    <Compile Include="CustomerTypeUserBF.cs" />
+    <Compile Include="CustomerUserBF.cs" />
+    <Compile Include="DataAviligonBF.cs" />
+    <Compile Include="DataCommandSDKBF.cs" />
+    <Compile Include="DataNextivaBF.cs" />
+    <Compile Include="DetectionMoveBF.cs" />
+    <Compile Include="DeviceBF.cs" />
+    <Compile Include="ErrorSWGNextivaBF.cs" />
+    <Compile Include="NextivaStatisticsBF.cs" />
+    <Compile Include="ParamServerBF.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemDeviceBF.cs" />
+    <Compile Include="SystemOpcionDetailsBF.cs" />
+    <Compile Include="SystemOpcionsBF.cs" />
+    <Compile Include="SystemTypeConfigBF.cs" />
+    <Compile Include="TrackingLogSystemBF.cs" />
+    <Compile Include="TypeDeviceBF.cs" />
+    <Compile Include="TypeRulesBF.cs" />
+    <Compile Include="UsuarioBF.cs" />
+    <Compile Include="UsuarioTipoBF.cs" />
+    <Compile Include="VCAlarmsBF.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

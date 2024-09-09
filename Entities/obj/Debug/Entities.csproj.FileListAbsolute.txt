@@ -1,0 +1,38 @@
+C:\Users\JoseBustos\Documents\Visual Studio 2013\Projects\2- C#  Sample\Entities\bin\Debug\Entities.dll
+C:\Users\JoseBustos\Documents\Visual Studio 2013\Projects\2- C#  Sample\Entities\bin\Debug\Entities.pdb
+C:\Users\JoseBustos\Documents\Visual Studio 2013\Projects\2- C#  Sample\Entities\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\JoseBustos\Documents\Visual Studio 2013\Projects\2- C#  Sample\Entities\obj\Debug\Entities.dll
+C:\Users\JoseBustos\Documents\Visual Studio 2013\Projects\2- C#  Sample\Entities\obj\Debug\Entities.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\2- C#  Sample\Entities\bin\Debug\Entities.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\2- C#  Sample\Entities\bin\Debug\Entities.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\2- C#  Sample\Entities\obj\Debug\Entities.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\2- C#  Sample\Entities\obj\Debug\Entities.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSample\Entities\bin\Debug\Entities.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSample\Entities\bin\Debug\Entities.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSample\Entities\obj\Debug\Entities.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSample\Entities\obj\Debug\Entities.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR\Entities\bin\Debug\Entities.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR\Entities\bin\Debug\Entities.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR\Entities\obj\Debug\Entities.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR\Entities\obj\Debug\Entities.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR - copia\Entities\bin\Debug\Entities.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR - copia\Entities\bin\Debug\Entities.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR - copia\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR - copia\Entities\obj\Debug\Entities.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR - copia\Entities\obj\Debug\Entities.pdb
+C:\Users\Administrator.VM-23-W7-test\Desktop\SWGDemoSampleWebService\Entities\bin\Debug\Entities.dll
+C:\Users\Administrator.VM-23-W7-test\Desktop\SWGDemoSampleWebService\Entities\bin\Debug\Entities.pdb
+C:\Users\Administrator.VM-23-W7-test\Desktop\SWGDemoSampleWebService\Entities\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator.VM-23-W7-test\Desktop\SWGDemoSampleWebService\Entities\obj\Debug\Entities.dll
+C:\Users\Administrator.VM-23-W7-test\Desktop\SWGDemoSampleWebService\Entities\obj\Debug\Entities.pdb
+Z:\01-Desarrollo\Plataformas\Desarrollos\Respaldo SWG 30-08-2017\SWGDemoSampleWebService\Entities\bin\Debug\Entities.dll
+Z:\01-Desarrollo\Plataformas\Desarrollos\Respaldo SWG 30-08-2017\SWGDemoSampleWebService\Entities\bin\Debug\Entities.pdb
+Z:\01-Desarrollo\Plataformas\Desarrollos\Respaldo SWG 30-08-2017\SWGDemoSampleWebService\Entities\obj\Debug\ResolveAssemblyReference.cache
+Z:\01-Desarrollo\Plataformas\Desarrollos\Respaldo SWG 30-08-2017\SWGDemoSampleWebService\Entities\obj\Debug\Entities.dll
+Z:\01-Desarrollo\Plataformas\Desarrollos\Respaldo SWG 30-08-2017\SWGDemoSampleWebService\Entities\obj\Debug\Entities.pdb
+C:\Users\Administrator.VM-23-W7-test\Documents\Visual Studio 2010\Projects\WSSGWAlarmas\Entities\bin\Debug\Entities.dll
+C:\Users\Administrator.VM-23-W7-test\Documents\Visual Studio 2010\Projects\WSSGWAlarmas\Entities\bin\Debug\Entities.pdb
+C:\Users\Administrator.VM-23-W7-test\Documents\Visual Studio 2010\Projects\WSSGWAlarmas\Entities\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator.VM-23-W7-test\Documents\Visual Studio 2010\Projects\WSSGWAlarmas\Entities\obj\Debug\Entities.dll
+C:\Users\Administrator.VM-23-W7-test\Documents\Visual Studio 2010\Projects\WSSGWAlarmas\Entities\obj\Debug\Entities.pdb

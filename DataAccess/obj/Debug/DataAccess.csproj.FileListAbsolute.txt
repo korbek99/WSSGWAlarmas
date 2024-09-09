@@ -1,0 +1,82 @@
+C:\Users\JoseBustos\Documents\Visual Studio 2013\Projects\2- C#  Sample\DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\JoseBustos\Documents\Visual Studio 2013\Projects\2- C#  Sample\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\JoseBustos\Documents\Visual Studio 2013\Projects\2- C#  Sample\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\JoseBustos\Documents\Visual Studio 2013\Projects\2- C#  Sample\DataAccess\bin\Debug\Entities.dll
+C:\Users\JoseBustos\Documents\Visual Studio 2013\Projects\2- C#  Sample\DataAccess\bin\Debug\Entities.pdb
+C:\Users\JoseBustos\Documents\Visual Studio 2013\Projects\2- C#  Sample\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\JoseBustos\Documents\Visual Studio 2013\Projects\2- C#  Sample\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2008\Projects\2- C#  Sample\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2008\Projects\2- C#  Sample\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2008\Projects\2- C#  Sample\DataAccess\bin\Debug\Entities.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2008\Projects\2- C#  Sample\DataAccess\bin\Debug\Entities.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2008\Projects\2- C#  Sample\DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2008\Projects\2- C#  Sample\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2008\Projects\2- C#  Sample\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\2- C#  Sample\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\2- C#  Sample\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\2- C#  Sample\DataAccess\bin\Debug\Entities.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\2- C#  Sample\DataAccess\bin\Debug\Entities.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\2- C#  Sample\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\2- C#  Sample\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\2- C#  Sample\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSample\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSample\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSample\DataAccess\bin\Debug\Entities.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSample\DataAccess\bin\Debug\Entities.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSample\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSample\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSample\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\korbek99\Documents\Visual Studio 2010\Projects\SWGDemoSample\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\korbek99\Documents\Visual Studio 2010\Projects\SWGDemoSample\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\korbek99\Documents\Visual Studio 2010\Projects\SWGDemoSample\DataAccess\bin\Debug\Entities.dll
+C:\Users\korbek99\Documents\Visual Studio 2010\Projects\SWGDemoSample\DataAccess\bin\Debug\Entities.pdb
+C:\Users\korbek99\Documents\Visual Studio 2010\Projects\SWGDemoSample\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\korbek99\Documents\Visual Studio 2010\Projects\SWGDemoSample\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\korbek99\Documents\Visual Studio 2010\Projects\SWGDemoSample\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\SWGDemoSample\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\SWGDemoSample\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\SWGDemoSample\DataAccess\bin\Debug\Entities.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\SWGDemoSample\DataAccess\bin\Debug\Entities.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\SWGDemoSample\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\administrator.ID-W7-JB-PC\Documents\SWGDemoSample\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\SWGDemoSample\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR\DataAccess\bin\Debug\Entities.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR\DataAccess\bin\Debug\Entities.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR\DataAccess\bin\Debug\DataAccess.dll.config
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR - copia\DataAccess\bin\Debug\DataAccess.dll.config
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR - copia\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR - copia\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR - copia\DataAccess\bin\Debug\Entities.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR - copia\DataAccess\bin\Debug\Entities.pdb
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR - copia\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR - copia\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\administrator.ID-W7-JB-PC\Documents\Visual Studio 2010\Projects\SWGDemoSampleR - copia\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\Administrator.VM-23-W7-test\Desktop\SWGDemoSampleWebService\DataAccess\bin\Debug\DataAccess.dll.config
+C:\Users\Administrator.VM-23-W7-test\Desktop\SWGDemoSampleWebService\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\Administrator.VM-23-W7-test\Desktop\SWGDemoSampleWebService\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\Administrator.VM-23-W7-test\Desktop\SWGDemoSampleWebService\DataAccess\bin\Debug\Entities.dll
+C:\Users\Administrator.VM-23-W7-test\Desktop\SWGDemoSampleWebService\DataAccess\bin\Debug\Entities.pdb
+C:\Users\Administrator.VM-23-W7-test\Desktop\SWGDemoSampleWebService\DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator.VM-23-W7-test\Desktop\SWGDemoSampleWebService\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\Administrator.VM-23-W7-test\Desktop\SWGDemoSampleWebService\DataAccess\obj\Debug\DataAccess.pdb
+Z:\01-Desarrollo\Plataformas\Desarrollos\Respaldo SWG 30-08-2017\SWGDemoSampleWebService\DataAccess\bin\Debug\DataAccess.dll.config
+Z:\01-Desarrollo\Plataformas\Desarrollos\Respaldo SWG 30-08-2017\SWGDemoSampleWebService\DataAccess\bin\Debug\DataAccess.dll
+Z:\01-Desarrollo\Plataformas\Desarrollos\Respaldo SWG 30-08-2017\SWGDemoSampleWebService\DataAccess\bin\Debug\DataAccess.pdb
+Z:\01-Desarrollo\Plataformas\Desarrollos\Respaldo SWG 30-08-2017\SWGDemoSampleWebService\DataAccess\bin\Debug\Entities.dll
+Z:\01-Desarrollo\Plataformas\Desarrollos\Respaldo SWG 30-08-2017\SWGDemoSampleWebService\DataAccess\bin\Debug\Entities.pdb
+Z:\01-Desarrollo\Plataformas\Desarrollos\Respaldo SWG 30-08-2017\SWGDemoSampleWebService\DataAccess\obj\Debug\ResolveAssemblyReference.cache
+Z:\01-Desarrollo\Plataformas\Desarrollos\Respaldo SWG 30-08-2017\SWGDemoSampleWebService\DataAccess\obj\Debug\DataAccess.dll
+Z:\01-Desarrollo\Plataformas\Desarrollos\Respaldo SWG 30-08-2017\SWGDemoSampleWebService\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\Administrator.VM-23-W7-test\Documents\Visual Studio 2010\Projects\WSSGWAlarmas\DataAccess\bin\Debug\DataAccess.dll.config
+C:\Users\Administrator.VM-23-W7-test\Documents\Visual Studio 2010\Projects\WSSGWAlarmas\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\Administrator.VM-23-W7-test\Documents\Visual Studio 2010\Projects\WSSGWAlarmas\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\Administrator.VM-23-W7-test\Documents\Visual Studio 2010\Projects\WSSGWAlarmas\DataAccess\bin\Debug\Entities.dll
+C:\Users\Administrator.VM-23-W7-test\Documents\Visual Studio 2010\Projects\WSSGWAlarmas\DataAccess\bin\Debug\Entities.pdb
+C:\Users\Administrator.VM-23-W7-test\Documents\Visual Studio 2010\Projects\WSSGWAlarmas\DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator.VM-23-W7-test\Documents\Visual Studio 2010\Projects\WSSGWAlarmas\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\Administrator.VM-23-W7-test\Documents\Visual Studio 2010\Projects\WSSGWAlarmas\DataAccess\obj\Debug\DataAccess.pdb

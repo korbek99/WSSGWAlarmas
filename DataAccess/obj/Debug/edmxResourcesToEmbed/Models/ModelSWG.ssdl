@@ -1,0 +1,1504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SWG1Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityContainer Name="SWG1ModelStoreContainer">
+    <EntitySet Name="Adaptor" EntityType="SWG1Model.Store.Adaptor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AlarmInfomation" EntityType="SWG1Model.Store.AlarmInfomation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AlarmSentNextiva" EntityType="SWG1Model.Store.AlarmSentNextiva" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AlarmTypeCapturedMovements" EntityType="SWG1Model.Store.AlarmTypeCapturedMovements" store:Type="Tables" store:Schema="dbo" store:Name="AlarmTypeCapturedMovements">
+      <DefiningQuery>SELECT 
+      [AlarmTypeCapturedMovements].[AlarmTypeCapMovID] AS [AlarmTypeCapMovID], 
+      [AlarmTypeCapturedMovements].[AlarmTypeCapMovDescrip] AS [AlarmTypeCapMovDescrip]
+      FROM [dbo].[AlarmTypeCapturedMovements] AS [AlarmTypeCapturedMovements]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="AlertasCapturadas" EntityType="SWG1Model.Store.AlertasCapturadas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AlertasProcesadas" EntityType="SWG1Model.Store.AlertasProcesadas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Camera" EntityType="SWG1Model.Store.Camera" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CameraPreset" EntityType="SWG1Model.Store.CameraPreset" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CustomerCompany" EntityType="SWG1Model.Store.CustomerCompany" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CustomerCompanyCamaras" EntityType="SWG1Model.Store.CustomerCompanyCamaras" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CustomerCompanyDataComunication" EntityType="SWG1Model.Store.CustomerCompanyDataComunication" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CustomerCompanyShopMap" EntityType="SWG1Model.Store.CustomerCompanyShopMap" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CustomerCompanyShopStore" EntityType="SWG1Model.Store.CustomerCompanyShopStore" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CustomerCompanyTypeMap" EntityType="SWG1Model.Store.CustomerCompanyTypeMap" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CustomerPrivilegesOptions" EntityType="SWG1Model.Store.CustomerPrivilegesOptions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CustomerSitePrivileges" EntityType="SWG1Model.Store.CustomerSitePrivileges" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CustomerTypeUser" EntityType="SWG1Model.Store.CustomerTypeUser" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CustomerUsers" EntityType="SWG1Model.Store.CustomerUsers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Device" EntityType="SWG1Model.Store.Device" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Errores" EntityType="SWG1Model.Store.Errores" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GI_Perfil" EntityType="SWG1Model.Store.GI_Perfil" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GI_PerfilOpciones" EntityType="SWG1Model.Store.GI_PerfilOpciones" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GI_Sistema" EntityType="SWG1Model.Store.GI_Sistema" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GI_Usuario" EntityType="SWG1Model.Store.GI_Usuario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GI_UsuarioPerfil" EntityType="SWG1Model.Store.GI_UsuarioPerfil" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GI_UsuarioTipo" EntityType="SWG1Model.Store.GI_UsuarioTipo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GIC_Ciudad" EntityType="SWG1Model.Store.GIC_Ciudad" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GIC_Comuna" EntityType="SWG1Model.Store.GIC_Comuna" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GIC_Pais" EntityType="SWG1Model.Store.GIC_Pais" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GIC_Provincia" EntityType="SWG1Model.Store.GIC_Provincia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GIC_Region" EntityType="SWG1Model.Store.GIC_Region" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="IbeaconLocationCustomerClientShop" EntityType="SWG1Model.Store.IbeaconLocationCustomerClientShop" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NextivaEventPreset" EntityType="SWG1Model.Store.NextivaEventPreset" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NextivaRulesPresentsAlarms" EntityType="SWG1Model.Store.NextivaRulesPresentsAlarms" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sistemas" EntityType="SWG1Model.Store.Sistemas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="SWG1Model.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SystemDevice" EntityType="SWG1Model.Store.SystemDevice" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SystemOpcionDetails" EntityType="SWG1Model.Store.SystemOpcionDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SystemOpcions" EntityType="SWG1Model.Store.SystemOpcions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SystemTypeConfig" EntityType="SWG1Model.Store.SystemTypeConfig" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TrackingLogSystem" EntityType="SWG1Model.Store.TrackingLogSystem" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TypeDevice" EntityType="SWG1Model.Store.TypeDevice" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TypeRuleNextiva" EntityType="SWG1Model.Store.TypeRuleNextiva" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VCARulesAlarms" EntityType="SWG1Model.Store.VCARulesAlarms" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="XMLNextiva" EntityType="SWG1Model.Store.XMLNextiva" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="XMLNextivaChannels" EntityType="SWG1Model.Store.XMLNextivaChannels" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="XMLNextivaEventPreset" EntityType="SWG1Model.Store.XMLNextivaEventPreset" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="XMLNextivaPorts" EntityType="SWG1Model.Store.XMLNextivaPorts" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_CustomerCompany_GIC_Ciudad" Association="SWG1Model.Store.FK_CustomerCompany_GIC_Ciudad">
+      <End Role="GIC_Ciudad" EntitySet="GIC_Ciudad" />
+      <End Role="CustomerCompany" EntitySet="CustomerCompany" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerCompanyCamaras_Camera" Association="SWG1Model.Store.FK_CustomerCompanyCamaras_Camera">
+      <End Role="Camera" EntitySet="Camera" />
+      <End Role="CustomerCompanyCamaras" EntitySet="CustomerCompanyCamaras" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerCompanyCamaras_CustomerCompany" Association="SWG1Model.Store.FK_CustomerCompanyCamaras_CustomerCompany">
+      <End Role="CustomerCompany" EntitySet="CustomerCompany" />
+      <End Role="CustomerCompanyCamaras" EntitySet="CustomerCompanyCamaras" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerCompanyDataComunication_CustomerCompany" Association="SWG1Model.Store.FK_CustomerCompanyDataComunication_CustomerCompany">
+      <End Role="CustomerCompany" EntitySet="CustomerCompany" />
+      <End Role="CustomerCompanyDataComunication" EntitySet="CustomerCompanyDataComunication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerCompanyShopMap_CustomerCompanyShopStore" Association="SWG1Model.Store.FK_CustomerCompanyShopMap_CustomerCompanyShopStore">
+      <End Role="CustomerCompanyShopStore" EntitySet="CustomerCompanyShopStore" />
+      <End Role="CustomerCompanyShopMap" EntitySet="CustomerCompanyShopMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerCompanyShopMap_CustomerCompanyTypeMap" Association="SWG1Model.Store.FK_CustomerCompanyShopMap_CustomerCompanyTypeMap">
+      <End Role="CustomerCompanyTypeMap" EntitySet="CustomerCompanyTypeMap" />
+      <End Role="CustomerCompanyShopMap" EntitySet="CustomerCompanyShopMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerCompanyShopStore_CustomerCompany" Association="SWG1Model.Store.FK_CustomerCompanyShopStore_CustomerCompany">
+      <End Role="CustomerCompany" EntitySet="CustomerCompany" />
+      <End Role="CustomerCompanyShopStore" EntitySet="CustomerCompanyShopStore" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerCompanyShopStore_GIC_Ciudad" Association="SWG1Model.Store.FK_CustomerCompanyShopStore_GIC_Ciudad">
+      <End Role="GIC_Ciudad" EntitySet="GIC_Ciudad" />
+      <End Role="CustomerCompanyShopStore" EntitySet="CustomerCompanyShopStore" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerPrivilegesOptions_CustomerSitePrivileges" Association="SWG1Model.Store.FK_CustomerPrivilegesOptions_CustomerSitePrivileges">
+      <End Role="CustomerSitePrivileges" EntitySet="CustomerSitePrivileges" />
+      <End Role="CustomerPrivilegesOptions" EntitySet="CustomerPrivilegesOptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerSitePrivileges_CustomerCompanyDataComunication" Association="SWG1Model.Store.FK_CustomerSitePrivileges_CustomerCompanyDataComunication">
+      <End Role="CustomerCompanyDataComunication" EntitySet="CustomerCompanyDataComunication" />
+      <End Role="CustomerSitePrivileges" EntitySet="CustomerSitePrivileges" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerUsers_CustomerCompany" Association="SWG1Model.Store.FK_CustomerUsers_CustomerCompany">
+      <End Role="CustomerCompany" EntitySet="CustomerCompany" />
+      <End Role="CustomerUsers" EntitySet="CustomerUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerUsers_CustomerTypeUser" Association="SWG1Model.Store.FK_CustomerUsers_CustomerTypeUser">
+      <End Role="CustomerTypeUser" EntitySet="CustomerTypeUser" />
+      <End Role="CustomerUsers" EntitySet="CustomerUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Device_CustomerCompany" Association="SWG1Model.Store.FK_Device_CustomerCompany">
+      <End Role="CustomerCompany" EntitySet="CustomerCompany" />
+      <End Role="Device" EntitySet="Device" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Device_TypeDevice" Association="SWG1Model.Store.FK_Device_TypeDevice">
+      <End Role="TypeDevice" EntitySet="TypeDevice" />
+      <End Role="Device" EntitySet="Device" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_Ciudad_GI_Region" Association="SWG1Model.Store.FK_GI_Ciudad_GI_Region">
+      <End Role="GIC_Region" EntitySet="GIC_Region" />
+      <End Role="GIC_Ciudad" EntitySet="GIC_Ciudad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_Errores_Sistemas" Association="SWG1Model.Store.FK_GI_Errores_Sistemas">
+      <End Role="Sistemas" EntitySet="Sistemas" />
+      <End Role="Errores" EntitySet="Errores" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_PerfilOpciones_GI_Perfil" Association="SWG1Model.Store.FK_GI_PerfilOpciones_GI_Perfil">
+      <End Role="GI_Perfil" EntitySet="GI_Perfil" />
+      <End Role="GI_PerfilOpciones" EntitySet="GI_PerfilOpciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_provincias_GI_regiones" Association="SWG1Model.Store.FK_GI_provincias_GI_regiones">
+      <End Role="GIC_Region" EntitySet="GIC_Region" />
+      <End Role="GIC_Provincia" EntitySet="GIC_Provincia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_Usuario_GI_UsuarioTipo" Association="SWG1Model.Store.FK_GI_Usuario_GI_UsuarioTipo">
+      <End Role="GI_UsuarioTipo" EntitySet="GI_UsuarioTipo" />
+      <End Role="GI_Usuario" EntitySet="GI_Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_UsuarioPerfil_GI_Perfil" Association="SWG1Model.Store.FK_GI_UsuarioPerfil_GI_Perfil">
+      <End Role="GI_Perfil" EntitySet="GI_Perfil" />
+      <End Role="GI_UsuarioPerfil" EntitySet="GI_UsuarioPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_UsuarioPerfil_GI_Usuario" Association="SWG1Model.Store.FK_GI_UsuarioPerfil_GI_Usuario">
+      <End Role="GI_Usuario" EntitySet="GI_Usuario" />
+      <End Role="GI_UsuarioPerfil" EntitySet="GI_UsuarioPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_UsuarioPerfil_Sistemas" Association="SWG1Model.Store.FK_GI_UsuarioPerfil_Sistemas">
+      <End Role="Sistemas" EntitySet="Sistemas" />
+      <End Role="GI_UsuarioPerfil" EntitySet="GI_UsuarioPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GIC_Comuna_GIC_Provincia" Association="SWG1Model.Store.FK_GIC_Comuna_GIC_Provincia">
+      <End Role="GIC_Provincia" EntitySet="GIC_Provincia" />
+      <End Role="GIC_Comuna" EntitySet="GIC_Comuna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GIC_Region_GIC_Pais" Association="SWG1Model.Store.FK_GIC_Region_GIC_Pais">
+      <End Role="GIC_Pais" EntitySet="GIC_Pais" />
+      <End Role="GIC_Region" EntitySet="GIC_Region" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IbeaconLocationCustomerClientShop_CustomerCompanyShopStore" Association="SWG1Model.Store.FK_IbeaconLocationCustomerClientShop_CustomerCompanyShopStore">
+      <End Role="CustomerCompanyShopStore" EntitySet="CustomerCompanyShopStore" />
+      <End Role="IbeaconLocationCustomerClientShop" EntitySet="IbeaconLocationCustomerClientShop" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NextivaRulesPresentsAlarms" Association="SWG1Model.Store.FK_NextivaRulesPresentsAlarms">
+      <End Role="VCARulesAlarms" EntitySet="VCARulesAlarms" />
+      <End Role="NextivaRulesPresentsAlarms" EntitySet="NextivaRulesPresentsAlarms" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NextivaRulesPresentsAlarms012" Association="SWG1Model.Store.FK_NextivaRulesPresentsAlarms012">
+      <End Role="NextivaEventPreset" EntitySet="NextivaEventPreset" />
+      <End Role="NextivaRulesPresentsAlarms" EntitySet="NextivaRulesPresentsAlarms" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SystemOpcionDetails_SystemOpcions" Association="SWG1Model.Store.FK_SystemOpcionDetails_SystemOpcions">
+      <End Role="SystemOpcions" EntitySet="SystemOpcions" />
+      <End Role="SystemOpcionDetails" EntitySet="SystemOpcionDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SystemOpcions_SystemTypeConfig" Association="SWG1Model.Store.FK_SystemOpcions_SystemTypeConfig">
+      <End Role="SystemTypeConfig" EntitySet="SystemTypeConfig" />
+      <End Role="SystemOpcions" EntitySet="SystemOpcions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_XMLNextivaChannels" Association="SWG1Model.Store.FK_XMLNextivaChannels">
+      <End Role="XMLNextiva" EntitySet="XMLNextiva" />
+      <End Role="XMLNextivaChannels" EntitySet="XMLNextivaChannels" />
+    </AssociationSet>
+    <AssociationSet Name="FK_XMLNextivaEventPreset" Association="SWG1Model.Store.FK_XMLNextivaEventPreset">
+      <End Role="XMLNextiva" EntitySet="XMLNextiva" />
+      <End Role="XMLNextivaEventPreset" EntitySet="XMLNextivaEventPreset" />
+    </AssociationSet>
+    <AssociationSet Name="FK_XMLNextivaPorts" Association="SWG1Model.Store.FK_XMLNextivaPorts">
+      <End Role="XMLNextiva" EntitySet="XMLNextiva" />
+      <End Role="XMLNextivaPorts" EntitySet="XMLNextivaPorts" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Adaptor">
+    <Key>
+      <PropertyRef Name="AdaptorID" />
+    </Key>
+    <Property Name="AdaptorID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AdaptorNameDescrip" Type="varchar" MaxLength="300" />
+    <Property Name="TypeAdaptorID" Type="int" Nullable="false" />
+    <Property Name="AdaptorSite" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="AdaptorUser" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="AdaptorPass" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="AdaptorPort" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="AdaptorDateIng" Type="datetime" Nullable="false" />
+    <Property Name="AdaptorEstado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AlarmInfomation">
+    <Key>
+      <PropertyRef Name="AlarmInfID" />
+    </Key>
+    <Property Name="AlarmInfID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AlarmInfIDE" Type="int" Nullable="false" />
+    <Property Name="AlarmInfChannel" Type="int" Nullable="false" />
+    <Property Name="AlarmInfState" Type="int" Nullable="false" />
+    <Property Name="AlarmInfEventType" Type="int" Nullable="false" />
+    <Property Name="AlarmInfRuleID" Type="int" Nullable="false" />
+    <Property Name="AlarmInTargetID" Type="int" Nullable="false" />
+    <Property Name="AlarmInfTargetType" Type="int" Nullable="false" />
+    <Property Name="AlarmInfrctTarget" Type="varchar" Nullable="false" MaxLength="3000" />
+    <Property Name="AlarmInfTargetSpeed" Type="int" Nullable="false" />
+    <Property Name="AlarmInfTargetDirection" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AlarmSentNextiva">
+    <Key>
+      <PropertyRef Name="AlarmSentID" />
+    </Key>
+    <Property Name="AlarmSentID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AlarmSentIDE" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="AlarmSentChannel" Type="int" Nullable="false" />
+    <Property Name="AlarmSentState" Type="int" Nullable="false" />
+    <Property Name="AlarmSentventType" Type="int" Nullable="false" />
+    <Property Name="AlarmSentRuleID" Type="int" Nullable="false" />
+    <Property Name="AlarmSentTargetID" Type="int" Nullable="false" />
+    <Property Name="AlarmSentTargetType" Type="int" Nullable="false" />
+    <Property Name="AlarmSentrctTarget" Type="varchar" Nullable="false" MaxLength="3000" />
+    <Property Name="AlarmSentTargetSpeed" Type="int" Nullable="false" />
+    <Property Name="AlarmSentTargetDirection" Type="int" Nullable="false" />
+    <Property Name="AlarmSentDateIng" Type="datetime" />
+    <Property Name="AlarmSentDateProcessed" Type="datetime" />
+    <Property Name="AlarmSentDescription" Type="varchar" MaxLength="500" />
+    <Property Name="AlarmSentEstado" Type="int" Nullable="false" />
+    <Property Name="CustomerCompanyID" Type="int" />
+    <Property Name="CusUserID" Type="int" />
+  </EntityType>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'SWG1.dbo.AlarmTypeCapturedMovements' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+  <EntityType Name="AlarmTypeCapturedMovements">
+    <Key>
+      <PropertyRef Name="AlarmTypeCapMovID" />
+    </Key>
+    <Property Name="AlarmTypeCapMovID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AlarmTypeCapMovDescrip" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="AlertasCapturadas">
+    <Key>
+      <PropertyRef Name="AlertasCapID" />
+    </Key>
+    <Property Name="AlertasCapID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AlertasCapIDLogon" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="AlertasCapIP" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="AlertasCapUser" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="AlertasCapPass" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="AlertasCapChannel" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="AlertasCapTCPUDP" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="AlertasCapMainSub" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="AlertasCapAlert" Type="varchar" Nullable="false" MaxLength="3000" />
+    <Property Name="AlertasCapEstado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AlertasProcesadas">
+    <Key>
+      <PropertyRef Name="AlertasProcID" />
+    </Key>
+    <Property Name="AlertasProcID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AlertasProcIDLogon" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="AlertasProcIP" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="AlertasProcUser" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="AlertasProcPass" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="AlertasProcChannel" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="AlertasProcTCPUDP" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="AlertasProcMainSub" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="AlertasProcAlert" Type="varchar" Nullable="false" MaxLength="3000" />
+    <Property Name="AlertasProcEstado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Camera">
+    <Key>
+      <PropertyRef Name="CameraID" />
+    </Key>
+    <Property Name="CameraID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CameraIDE" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="CameraChannel" Type="int" Nullable="false" />
+    <Property Name="CameraIDLogon" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="CameraIP" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="CameraUser" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CameraPass" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CameraPort" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="CameraEstado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CameraPreset">
+    <Key>
+      <PropertyRef Name="CameraPresetID" />
+    </Key>
+    <Property Name="CameraPresetID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CameraID" Type="int" Nullable="false" />
+    <Property Name="CameraPresetChannel" Type="int" Nullable="false" />
+    <Property Name="CameraPresetPresNumber" Type="int" Nullable="false" />
+    <Property Name="CameraPresetPresCabecera" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="CameraPresetPresArgument" Type="varchar" Nullable="false" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="CustomerCompany">
+    <Key>
+      <PropertyRef Name="CustomerCompanyID" />
+    </Key>
+    <Property Name="CustomerCompanyID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerCompanyIDE" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CustomerCompanyName" Type="varchar" Nullable="false" MaxLength="180" />
+    <Property Name="CustomerCompanyDir" Type="varchar" Nullable="false" MaxLength="280" />
+    <Property Name="CustomerCompanyPhone" Type="varchar" Nullable="false" MaxLength="180" />
+    <Property Name="CustomerCompanyCelPhone" Type="varchar" Nullable="false" MaxLength="180" />
+    <Property Name="CustomerCompanyEmail" Type="varchar" Nullable="false" MaxLength="180" />
+    <Property Name="CustomerCompanyFax" Type="nchar" MaxLength="100" />
+    <Property Name="CustomerCompanyWebSite" Type="nchar" MaxLength="100" />
+    <Property Name="CiudadID" Type="int" Nullable="false" />
+    <Property Name="CustomerCompanyDateIng" Type="datetime" Nullable="false" />
+    <Property Name="CustomerCompanyState" Type="int" Nullable="false" />
+    <Property Name="CustomerCompanyShortName" Type="varchar" MaxLength="180" />
+  </EntityType>
+  <EntityType Name="CustomerCompanyCamaras">
+    <Key>
+      <PropertyRef Name="CustoCompanyCamID" />
+    </Key>
+    <Property Name="CustoCompanyCamID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerCompanyID" Type="int" Nullable="false" />
+    <Property Name="CameraID" Type="int" Nullable="false" />
+    <Property Name="CustoCompanyCamDescrip" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="CustoCompanyCamDateIng" Type="datetime" Nullable="false" />
+    <Property Name="CustoCompanyCamState" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustomerCompanyDataComunication">
+    <Key>
+      <PropertyRef Name="CusCompanyDataID" />
+    </Key>
+    <Property Name="CusCompanyDataID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerCompanyID" Type="int" Nullable="false" />
+    <Property Name="CusCompanyDataCameraName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CusCompanyDataIDE" Type="int" />
+    <Property Name="CusCompanyDataNextNiveles" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CusCompanyDataSiteName" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="CusCompanyDataNameUrl" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="CusCompanyDataSiteUser" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CusCompanyDataSitePass" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CusCompanyDataAlarmSite" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="CusCompanyDataListenResponse" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CusCompanyDataListenError" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CusCompanyDataPathString" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="CusCompanyDataFileName" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CusCompanyDataActivo" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustomerCompanyShopMap">
+    <Key>
+      <PropertyRef Name="CustomerCompanyMapID" />
+    </Key>
+    <Property Name="CustomerCompanyMapID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerCompanyMapDescrip" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="CustCompanyTypeMapID" Type="int" />
+    <Property Name="CustomerCompanyMap" Type="varchar" Nullable="false" MaxLength="2000" />
+    <Property Name="CustomerCompanyMapLevel" Type="int" />
+    <Property Name="CustomerCompanyShopID" Type="int" Nullable="false" />
+    <Property Name="CustomerCompanyMapDateIng" Type="datetime" Nullable="false" />
+    <Property Name="CustomerCompanyMapState" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustomerCompanyShopStore">
+    <Key>
+      <PropertyRef Name="CustomerCompanyShopID" />
+    </Key>
+    <Property Name="CustomerCompanyShopID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerCompanyShopDescrip" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="CustomerCompanyShopDirec" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="CiudadID" Type="int" Nullable="false" />
+    <Property Name="CustomerCompanyID" Type="int" Nullable="false" />
+    <Property Name="CustomerCompanyShopPhone" Type="varchar" MaxLength="180" />
+    <Property Name="CustomerCompanyShopCelPhone" Type="varchar" Nullable="false" MaxLength="180" />
+    <Property Name="CustomerCompanyShopEmail" Type="varchar" MaxLength="180" />
+    <Property Name="CustomerCompanyShopFax" Type="nchar" MaxLength="100" />
+    <Property Name="CustomerCompanyShopDateIng" Type="datetime" Nullable="false" />
+    <Property Name="CustomerCompanyShopState" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustomerCompanyTypeMap">
+    <Key>
+      <PropertyRef Name="CustCompanyTypeMapID" />
+    </Key>
+    <Property Name="CustCompanyTypeMapID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustCompanyTypeMapDesc" Type="varchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="CustomerPrivilegesOptions">
+    <Key>
+      <PropertyRef Name="CusSitePrivOptionID" />
+    </Key>
+    <Property Name="CusSitePrivOptionID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CusSitePrivOptionDesc" Type="varchar" MaxLength="300" />
+    <Property Name="CusSitePrivID" Type="int" Nullable="false" />
+    <Property Name="Activo" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustomerSitePrivileges">
+    <Key>
+      <PropertyRef Name="CusSitePrivID" />
+    </Key>
+    <Property Name="CusSitePrivID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CusSitePrivDescrip" Type="varchar" MaxLength="300" />
+    <Property Name="CustomerPrivObser" Type="varchar" MaxLength="2000" />
+    <Property Name="CusCompanyDataID" Type="int" Nullable="false" />
+    <Property Name="Activo" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustomerTypeUser">
+    <Key>
+      <PropertyRef Name="CusUserTypeID" />
+    </Key>
+    <Property Name="CusUserTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CusUserTypeDescrip" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="CustomerUsers">
+    <Key>
+      <PropertyRef Name="CusUserID" />
+    </Key>
+    <Property Name="CusUserID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CusUserIDE" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CusUserNames" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CusUserLastNames" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="CusUserUser" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CusUserPass" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CusUserDateIn" Type="datetime" Nullable="false" />
+    <Property Name="CusUserTypeID" Type="int" Nullable="false" />
+    <Property Name="CusUserAllowQuest" Type="int" Nullable="false" />
+    <Property Name="CusUserAllowUpdate" Type="int" Nullable="false" />
+    <Property Name="CusUserAllowDel" Type="int" Nullable="false" />
+    <Property Name="CusUserAllowInsert" Type="int" Nullable="false" />
+    <Property Name="CusUserPhoto" Type="varchar(max)" />
+    <Property Name="CusUserState" Type="int" Nullable="false" />
+    <Property Name="CustomerCompanyID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Device">
+    <Key>
+      <PropertyRef Name="DeviceID" />
+    </Key>
+    <Property Name="DeviceID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DeviceIDE" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="DeviceNameDescrip" Type="varchar" MaxLength="300" />
+    <Property Name="TypeDeviceID" Type="int" Nullable="false" />
+    <Property Name="CustomerCompanyID" Type="int" Nullable="false" />
+    <Property Name="DeviceChannel" Type="int" Nullable="false" />
+    <Property Name="DeviceIDLogon" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="DeviceIP" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="DeviceUser" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="DevicePass" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="DevicePort" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="DeviceDateIng" Type="datetime" Nullable="false" />
+    <Property Name="DeviceEstado" Type="int" Nullable="false" />
+    <Property Name="SystemDeviceID" Type="int" />
+  </EntityType>
+  <EntityType Name="Errores">
+    <Key>
+      <PropertyRef Name="IdError" />
+    </Key>
+    <Property Name="IdError" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="MachineName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="IdSistema" Type="int" Nullable="false" />
+    <Property Name="Mensaje" Type="varchar" Nullable="false" />
+    <Property Name="Resuelto" Type="bit" Nullable="false" />
+    <Property Name="NumeroError" Type="int" Nullable="false" />
+    <Property Name="Modulo" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="GI_Perfil">
+    <Key>
+      <PropertyRef Name="PerfilID" />
+    </Key>
+    <Property Name="PerfilID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PerfilDescrip" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="PerfilSistema" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="PerfilFechaMod" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GI_PerfilOpciones">
+    <Key>
+      <PropertyRef Name="PerfilOpcionesID" />
+    </Key>
+    <Property Name="PerfilOpcionesID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PerfilID" Type="int" Nullable="false" />
+    <Property Name="PerfilOpcionDesc" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="PerfilOpcionFechaIng" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GI_Sistema">
+    <Key>
+      <PropertyRef Name="SistemaID" />
+    </Key>
+    <Property Name="SistemaID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SistemaDescrip" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="SistemaEstado" Type="int" Nullable="false" />
+    <Property Name="SistemaFechaIng" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GI_Usuario">
+    <Key>
+      <PropertyRef Name="UsuarioID" />
+    </Key>
+    <Property Name="UsuarioID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UsuarioRut" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="UsuarioNombre" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="UsuarioApellidos" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="UsuarioUser" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="UsuarioPass" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="UsuarioFechaIng" Type="datetime" Nullable="false" />
+    <Property Name="UsuarioTipoID" Type="int" Nullable="false" />
+    <Property Name="UsuarioPermisoCon" Type="int" Nullable="false" />
+    <Property Name="UsuarioPermisoMod" Type="int" Nullable="false" />
+    <Property Name="UsuarioPermisoDel" Type="int" Nullable="false" />
+    <Property Name="UsuarioPermisoIng" Type="int" Nullable="false" />
+    <Property Name="UsuarioFoto" Type="varchar(max)" />
+    <Property Name="UsuarioEstado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GI_UsuarioPerfil">
+    <Key>
+      <PropertyRef Name="UsuarioPerfilID" />
+    </Key>
+    <Property Name="UsuarioPerfilID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PerfilID" Type="int" Nullable="false" />
+    <Property Name="UsuarioID" Type="int" Nullable="false" />
+    <Property Name="SistemaID" Type="int" Nullable="false" />
+    <Property Name="UsuarioPerfilDescrip" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GI_UsuarioTipo">
+    <Key>
+      <PropertyRef Name="UsuarioTipoID" />
+    </Key>
+    <Property Name="UsuarioTipoID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UsuarioTipoDescrip" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="GIC_Ciudad">
+    <Key>
+      <PropertyRef Name="CiudadID" />
+    </Key>
+    <Property Name="CiudadID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CiudadNombre" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="RegionID" Type="int" Nullable="false" />
+    <Property Name="Activo" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GIC_Comuna">
+    <Key>
+      <PropertyRef Name="ComunaID" />
+    </Key>
+    <Property Name="ComunaID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProvinciaID" Type="int" Nullable="false" />
+    <Property Name="ComunaNombre" Type="char" Nullable="false" MaxLength="50" />
+    <Property Name="Activo" Type="int" />
+  </EntityType>
+  <EntityType Name="GIC_Pais">
+    <Key>
+      <PropertyRef Name="PaisID" />
+    </Key>
+    <Property Name="PaisID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PaisNombre" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="GIC_Provincia">
+    <Key>
+      <PropertyRef Name="ProvinciaID" />
+    </Key>
+    <Property Name="ProvinciaID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RegionID" Type="int" Nullable="false" />
+    <Property Name="ProvinciaNombre" Type="char" Nullable="false" MaxLength="50" />
+    <Property Name="Capital" Type="char" MaxLength="50" />
+    <Property Name="Activo" Type="int" />
+  </EntityType>
+  <EntityType Name="GIC_Region">
+    <Key>
+      <PropertyRef Name="RegionID" />
+    </Key>
+    <Property Name="RegionID" Type="int" Nullable="false" />
+    <Property Name="Region_numero_romano" Type="char" Nullable="false" MaxLength="4" />
+    <Property Name="RegionNombre" Type="char" Nullable="false" MaxLength="50" />
+    <Property Name="Capital" Type="char" MaxLength="50" />
+    <Property Name="Activo" Type="int" />
+    <Property Name="PaisID" Type="int" />
+  </EntityType>
+  <EntityType Name="IbeaconLocationCustomerClientShop">
+    <Key>
+      <PropertyRef Name="IbeaconLocatCusID" />
+    </Key>
+    <Property Name="IbeaconLocatCusID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IbeaconLocatCusDeviceIDE" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="IbeaconLocatCusDeviceName" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="IbeaconLocatCusDeviceNumberCel" Type="varchar" MaxLength="50" />
+    <Property Name="IbeaconLocatCusObsDescrip" Type="varchar" MaxLength="300" />
+    <Property Name="CustomerCompanyShopID" Type="int" Nullable="false" />
+    <Property Name="IbeaconLocatCusObsTarget" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="IbeaconLocatCusDateIng" Type="datetime" Nullable="false" />
+    <Property Name="IbeaconLocatCusState" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NextivaEventPreset">
+    <Key>
+      <PropertyRef Name="NextivaPresEventID" />
+    </Key>
+    <Property Name="NextivaPresEventID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NextivaPresEventNumber" Type="int" Nullable="false" />
+    <Property Name="NextivaPresEventDescrip" Type="varchar" Nullable="false" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="NextivaRulesPresentsAlarms">
+    <Key>
+      <PropertyRef Name="NextivaRulesPresentID" />
+    </Key>
+    <Property Name="NextivaRulesPresentID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NextivaRulesID" Type="int" Nullable="false" />
+    <Property Name="NextivaPresEventID" Type="int" Nullable="false" />
+    <Property Name="NextivaRulesPresentDescrip" Type="varchar" Nullable="false" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="Sistemas">
+    <Key>
+      <PropertyRef Name="IdSistema" />
+    </Key>
+    <Property Name="IdSistema" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Sistema" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="EnvioAlarma" Type="int" Nullable="false" />
+    <Property Name="Tecnologia" Type="char" Nullable="false" MaxLength="50" />
+    <Property Name="AlarmaEmailTo" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="AlarmaEmailCC" Type="varchar" MaxLength="100" />
+    <Property Name="AlarmaEmailBCC" Type="varchar" MaxLength="100" />
+    <Property Name="RespaldoEmailTo" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="RespaldoEmailCC" Type="varchar" MaxLength="100" />
+    <Property Name="RespaldoEmailBCC" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="SystemDevice">
+    <Key>
+      <PropertyRef Name="SystemDeviceID" />
+    </Key>
+    <Property Name="SystemDeviceID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SystemDeviceDescrip" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="SystemDeviceUser" Type="varchar" MaxLength="20" />
+    <Property Name="SystemDevicePass" Type="varchar" MaxLength="20" />
+    <Property Name="SystemDeviceDateIng" Type="datetime" Nullable="false" />
+    <Property Name="SystemDeviceEstado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SystemOpcionDetails">
+    <Key>
+      <PropertyRef Name="SystemOpcionDetailID" />
+    </Key>
+    <Property Name="SystemOpcionDetailID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SystemOpcionID" Type="int" Nullable="false" />
+    <Property Name="SystemOpcionDetailDesc" Type="varchar" MaxLength="300" />
+    <Property Name="SystemOpcionDetailState" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SystemOpcions">
+    <Key>
+      <PropertyRef Name="SystemOpcionID" />
+    </Key>
+    <Property Name="SystemOpcionID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SystemOpcionDesc" Type="varchar" MaxLength="300" />
+    <Property Name="SystemTypeConfigID" Type="int" />
+    <Property Name="SystemOpcionState" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SystemTypeConfig">
+    <Key>
+      <PropertyRef Name="SystemTypeConfigID" />
+    </Key>
+    <Property Name="SystemTypeConfigID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SystemTypeConfigDesc" Type="varchar" MaxLength="300" />
+    <Property Name="Activo" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TrackingLogSystem">
+    <Key>
+      <PropertyRef Name="TrackingID" />
+    </Key>
+    <Property Name="TrackingID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="MachineName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="IdSistema" Type="int" Nullable="false" />
+    <Property Name="ActionMensaje" Type="varchar" Nullable="false" />
+    <Property Name="Activo" Type="bit" Nullable="false" />
+    <Property Name="NumeroError" Type="int" Nullable="false" />
+    <Property Name="Modulo" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TypeDevice">
+    <Key>
+      <PropertyRef Name="TypeDeviceID" />
+    </Key>
+    <Property Name="TypeDeviceID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TypeDeviceDescrip" Type="varchar" Nullable="false" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="TypeRuleNextiva">
+    <Key>
+      <PropertyRef Name="TypeRuleID" />
+    </Key>
+    <Property Name="TypeRuleID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TypeRuleNumber" Type="int" Nullable="false" />
+    <Property Name="TypeRuleDescrip" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="TypeRuleShortDescrip" Type="varchar" MaxLength="100" />
+    <Property Name="TypeRuleTechnicalNameSDK" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="VCARulesAlarms">
+    <Key>
+      <PropertyRef Name="NextivaRulesID" />
+    </Key>
+    <Property Name="NextivaRulesID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NextivaRulesNumber" Type="varchar" Nullable="false" MaxLength="3" />
+    <Property Name="NextivaRulesDescripcion" Type="varchar" Nullable="false" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="XMLNextiva">
+    <Key>
+      <PropertyRef Name="XMLNextID" />
+    </Key>
+    <Property Name="XMLNextID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="XMLNextNiveles" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="XMLNextSiteName" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="XMLNextSiteNameUrl" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="XMLNextSiteUser" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="XMLNextSitePass" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="XMLNextAlarmSite" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="XMLNextListenResponse" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="XMLNextListenError" Type="varchar" Nullable="false" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="XMLNextivaChannels">
+    <Key>
+      <PropertyRef Name="XMLNextChannelID" />
+    </Key>
+    <Property Name="XMLNextChannelID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="XMLNextID" Type="int" Nullable="false" />
+    <Property Name="XMLNextChannel" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="XMLNextivaEventPreset">
+    <Key>
+      <PropertyRef Name="XMLNextivaPreslID" />
+    </Key>
+    <Property Name="XMLNextivaPreslID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="XMLNextID" Type="int" Nullable="false" />
+    <Property Name="XMLNextivaPresNumber" Type="int" Nullable="false" />
+    <Property Name="XMLNextivaPresCabecera" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="XMLNextivaPresArgument" Type="varchar" Nullable="false" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="XMLNextivaPorts">
+    <Key>
+      <PropertyRef Name="XMLNextPortID" />
+    </Key>
+    <Property Name="XMLNextPortID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="XMLNextID" Type="int" Nullable="false" />
+    <Property Name="XMLNextPorts" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_CustomerCompany_GIC_Ciudad">
+    <End Role="GIC_Ciudad" Type="SWG1Model.Store.GIC_Ciudad" Multiplicity="1" />
+    <End Role="CustomerCompany" Type="SWG1Model.Store.CustomerCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Ciudad">
+        <PropertyRef Name="CiudadID" />
+      </Principal>
+      <Dependent Role="CustomerCompany">
+        <PropertyRef Name="CiudadID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerCompanyCamaras_Camera">
+    <End Role="Camera" Type="SWG1Model.Store.Camera" Multiplicity="1" />
+    <End Role="CustomerCompanyCamaras" Type="SWG1Model.Store.CustomerCompanyCamaras" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Camera">
+        <PropertyRef Name="CameraID" />
+      </Principal>
+      <Dependent Role="CustomerCompanyCamaras">
+        <PropertyRef Name="CameraID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerCompanyCamaras_CustomerCompany">
+    <End Role="CustomerCompany" Type="SWG1Model.Store.CustomerCompany" Multiplicity="1" />
+    <End Role="CustomerCompanyCamaras" Type="SWG1Model.Store.CustomerCompanyCamaras" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerCompany">
+        <PropertyRef Name="CustomerCompanyID" />
+      </Principal>
+      <Dependent Role="CustomerCompanyCamaras">
+        <PropertyRef Name="CustomerCompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerCompanyDataComunication_CustomerCompany">
+    <End Role="CustomerCompany" Type="SWG1Model.Store.CustomerCompany" Multiplicity="1" />
+    <End Role="CustomerCompanyDataComunication" Type="SWG1Model.Store.CustomerCompanyDataComunication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerCompany">
+        <PropertyRef Name="CustomerCompanyID" />
+      </Principal>
+      <Dependent Role="CustomerCompanyDataComunication">
+        <PropertyRef Name="CustomerCompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerCompanyShopMap_CustomerCompanyShopStore">
+    <End Role="CustomerCompanyShopStore" Type="SWG1Model.Store.CustomerCompanyShopStore" Multiplicity="1" />
+    <End Role="CustomerCompanyShopMap" Type="SWG1Model.Store.CustomerCompanyShopMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerCompanyShopStore">
+        <PropertyRef Name="CustomerCompanyShopID" />
+      </Principal>
+      <Dependent Role="CustomerCompanyShopMap">
+        <PropertyRef Name="CustomerCompanyShopID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerCompanyShopMap_CustomerCompanyTypeMap">
+    <End Role="CustomerCompanyTypeMap" Type="SWG1Model.Store.CustomerCompanyTypeMap" Multiplicity="0..1" />
+    <End Role="CustomerCompanyShopMap" Type="SWG1Model.Store.CustomerCompanyShopMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerCompanyTypeMap">
+        <PropertyRef Name="CustCompanyTypeMapID" />
+      </Principal>
+      <Dependent Role="CustomerCompanyShopMap">
+        <PropertyRef Name="CustCompanyTypeMapID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerCompanyShopStore_CustomerCompany">
+    <End Role="CustomerCompany" Type="SWG1Model.Store.CustomerCompany" Multiplicity="1" />
+    <End Role="CustomerCompanyShopStore" Type="SWG1Model.Store.CustomerCompanyShopStore" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerCompany">
+        <PropertyRef Name="CustomerCompanyID" />
+      </Principal>
+      <Dependent Role="CustomerCompanyShopStore">
+        <PropertyRef Name="CustomerCompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerCompanyShopStore_GIC_Ciudad">
+    <End Role="GIC_Ciudad" Type="SWG1Model.Store.GIC_Ciudad" Multiplicity="1" />
+    <End Role="CustomerCompanyShopStore" Type="SWG1Model.Store.CustomerCompanyShopStore" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Ciudad">
+        <PropertyRef Name="CiudadID" />
+      </Principal>
+      <Dependent Role="CustomerCompanyShopStore">
+        <PropertyRef Name="CiudadID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerPrivilegesOptions_CustomerSitePrivileges">
+    <End Role="CustomerSitePrivileges" Type="SWG1Model.Store.CustomerSitePrivileges" Multiplicity="1" />
+    <End Role="CustomerPrivilegesOptions" Type="SWG1Model.Store.CustomerPrivilegesOptions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerSitePrivileges">
+        <PropertyRef Name="CusSitePrivID" />
+      </Principal>
+      <Dependent Role="CustomerPrivilegesOptions">
+        <PropertyRef Name="CusSitePrivID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerSitePrivileges_CustomerCompanyDataComunication">
+    <End Role="CustomerCompanyDataComunication" Type="SWG1Model.Store.CustomerCompanyDataComunication" Multiplicity="1" />
+    <End Role="CustomerSitePrivileges" Type="SWG1Model.Store.CustomerSitePrivileges" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerCompanyDataComunication">
+        <PropertyRef Name="CusCompanyDataID" />
+      </Principal>
+      <Dependent Role="CustomerSitePrivileges">
+        <PropertyRef Name="CusCompanyDataID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerUsers_CustomerCompany">
+    <End Role="CustomerCompany" Type="SWG1Model.Store.CustomerCompany" Multiplicity="1" />
+    <End Role="CustomerUsers" Type="SWG1Model.Store.CustomerUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerCompany">
+        <PropertyRef Name="CustomerCompanyID" />
+      </Principal>
+      <Dependent Role="CustomerUsers">
+        <PropertyRef Name="CustomerCompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerUsers_CustomerTypeUser">
+    <End Role="CustomerTypeUser" Type="SWG1Model.Store.CustomerTypeUser" Multiplicity="1" />
+    <End Role="CustomerUsers" Type="SWG1Model.Store.CustomerUsers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerTypeUser">
+        <PropertyRef Name="CusUserTypeID" />
+      </Principal>
+      <Dependent Role="CustomerUsers">
+        <PropertyRef Name="CusUserTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Device_CustomerCompany">
+    <End Role="CustomerCompany" Type="SWG1Model.Store.CustomerCompany" Multiplicity="1" />
+    <End Role="Device" Type="SWG1Model.Store.Device" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerCompany">
+        <PropertyRef Name="CustomerCompanyID" />
+      </Principal>
+      <Dependent Role="Device">
+        <PropertyRef Name="CustomerCompanyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Device_TypeDevice">
+    <End Role="TypeDevice" Type="SWG1Model.Store.TypeDevice" Multiplicity="1" />
+    <End Role="Device" Type="SWG1Model.Store.Device" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeDevice">
+        <PropertyRef Name="TypeDeviceID" />
+      </Principal>
+      <Dependent Role="Device">
+        <PropertyRef Name="TypeDeviceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_Ciudad_GI_Region">
+    <End Role="GIC_Region" Type="SWG1Model.Store.GIC_Region" Multiplicity="1" />
+    <End Role="GIC_Ciudad" Type="SWG1Model.Store.GIC_Ciudad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Region">
+        <PropertyRef Name="RegionID" />
+      </Principal>
+      <Dependent Role="GIC_Ciudad">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_Errores_Sistemas">
+    <End Role="Sistemas" Type="SWG1Model.Store.Sistemas" Multiplicity="1" />
+    <End Role="Errores" Type="SWG1Model.Store.Errores" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sistemas">
+        <PropertyRef Name="IdSistema" />
+      </Principal>
+      <Dependent Role="Errores">
+        <PropertyRef Name="IdSistema" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_PerfilOpciones_GI_Perfil">
+    <End Role="GI_Perfil" Type="SWG1Model.Store.GI_Perfil" Multiplicity="1" />
+    <End Role="GI_PerfilOpciones" Type="SWG1Model.Store.GI_PerfilOpciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GI_Perfil">
+        <PropertyRef Name="PerfilID" />
+      </Principal>
+      <Dependent Role="GI_PerfilOpciones">
+        <PropertyRef Name="PerfilID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_provincias_GI_regiones">
+    <End Role="GIC_Region" Type="SWG1Model.Store.GIC_Region" Multiplicity="1" />
+    <End Role="GIC_Provincia" Type="SWG1Model.Store.GIC_Provincia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Region">
+        <PropertyRef Name="RegionID" />
+      </Principal>
+      <Dependent Role="GIC_Provincia">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_Usuario_GI_UsuarioTipo">
+    <End Role="GI_UsuarioTipo" Type="SWG1Model.Store.GI_UsuarioTipo" Multiplicity="1" />
+    <End Role="GI_Usuario" Type="SWG1Model.Store.GI_Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GI_UsuarioTipo">
+        <PropertyRef Name="UsuarioTipoID" />
+      </Principal>
+      <Dependent Role="GI_Usuario">
+        <PropertyRef Name="UsuarioTipoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_UsuarioPerfil_GI_Perfil">
+    <End Role="GI_Perfil" Type="SWG1Model.Store.GI_Perfil" Multiplicity="1" />
+    <End Role="GI_UsuarioPerfil" Type="SWG1Model.Store.GI_UsuarioPerfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GI_Perfil">
+        <PropertyRef Name="PerfilID" />
+      </Principal>
+      <Dependent Role="GI_UsuarioPerfil">
+        <PropertyRef Name="PerfilID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_UsuarioPerfil_GI_Usuario">
+    <End Role="GI_Usuario" Type="SWG1Model.Store.GI_Usuario" Multiplicity="1" />
+    <End Role="GI_UsuarioPerfil" Type="SWG1Model.Store.GI_UsuarioPerfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GI_Usuario">
+        <PropertyRef Name="UsuarioID" />
+      </Principal>
+      <Dependent Role="GI_UsuarioPerfil">
+        <PropertyRef Name="UsuarioID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_UsuarioPerfil_Sistemas">
+    <End Role="Sistemas" Type="SWG1Model.Store.Sistemas" Multiplicity="1" />
+    <End Role="GI_UsuarioPerfil" Type="SWG1Model.Store.GI_UsuarioPerfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sistemas">
+        <PropertyRef Name="IdSistema" />
+      </Principal>
+      <Dependent Role="GI_UsuarioPerfil">
+        <PropertyRef Name="SistemaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GIC_Comuna_GIC_Provincia">
+    <End Role="GIC_Provincia" Type="SWG1Model.Store.GIC_Provincia" Multiplicity="1" />
+    <End Role="GIC_Comuna" Type="SWG1Model.Store.GIC_Comuna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Provincia">
+        <PropertyRef Name="ProvinciaID" />
+      </Principal>
+      <Dependent Role="GIC_Comuna">
+        <PropertyRef Name="ProvinciaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GIC_Region_GIC_Pais">
+    <End Role="GIC_Pais" Type="SWG1Model.Store.GIC_Pais" Multiplicity="0..1" />
+    <End Role="GIC_Region" Type="SWG1Model.Store.GIC_Region" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Pais">
+        <PropertyRef Name="PaisID" />
+      </Principal>
+      <Dependent Role="GIC_Region">
+        <PropertyRef Name="PaisID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IbeaconLocationCustomerClientShop_CustomerCompanyShopStore">
+    <End Role="CustomerCompanyShopStore" Type="SWG1Model.Store.CustomerCompanyShopStore" Multiplicity="1" />
+    <End Role="IbeaconLocationCustomerClientShop" Type="SWG1Model.Store.IbeaconLocationCustomerClientShop" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerCompanyShopStore">
+        <PropertyRef Name="CustomerCompanyShopID" />
+      </Principal>
+      <Dependent Role="IbeaconLocationCustomerClientShop">
+        <PropertyRef Name="CustomerCompanyShopID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NextivaRulesPresentsAlarms">
+    <End Role="VCARulesAlarms" Type="SWG1Model.Store.VCARulesAlarms" Multiplicity="1" />
+    <End Role="NextivaRulesPresentsAlarms" Type="SWG1Model.Store.NextivaRulesPresentsAlarms" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VCARulesAlarms">
+        <PropertyRef Name="NextivaRulesID" />
+      </Principal>
+      <Dependent Role="NextivaRulesPresentsAlarms">
+        <PropertyRef Name="NextivaRulesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NextivaRulesPresentsAlarms012">
+    <End Role="NextivaEventPreset" Type="SWG1Model.Store.NextivaEventPreset" Multiplicity="1" />
+    <End Role="NextivaRulesPresentsAlarms" Type="SWG1Model.Store.NextivaRulesPresentsAlarms" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NextivaEventPreset">
+        <PropertyRef Name="NextivaPresEventID" />
+      </Principal>
+      <Dependent Role="NextivaRulesPresentsAlarms">
+        <PropertyRef Name="NextivaPresEventID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SystemOpcionDetails_SystemOpcions">
+    <End Role="SystemOpcions" Type="SWG1Model.Store.SystemOpcions" Multiplicity="1" />
+    <End Role="SystemOpcionDetails" Type="SWG1Model.Store.SystemOpcionDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SystemOpcions">
+        <PropertyRef Name="SystemOpcionID" />
+      </Principal>
+      <Dependent Role="SystemOpcionDetails">
+        <PropertyRef Name="SystemOpcionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SystemOpcions_SystemTypeConfig">
+    <End Role="SystemTypeConfig" Type="SWG1Model.Store.SystemTypeConfig" Multiplicity="0..1" />
+    <End Role="SystemOpcions" Type="SWG1Model.Store.SystemOpcions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SystemTypeConfig">
+        <PropertyRef Name="SystemTypeConfigID" />
+      </Principal>
+      <Dependent Role="SystemOpcions">
+        <PropertyRef Name="SystemTypeConfigID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_XMLNextivaChannels">
+    <End Role="XMLNextiva" Type="SWG1Model.Store.XMLNextiva" Multiplicity="1" />
+    <End Role="XMLNextivaChannels" Type="SWG1Model.Store.XMLNextivaChannels" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="XMLNextiva">
+        <PropertyRef Name="XMLNextID" />
+      </Principal>
+      <Dependent Role="XMLNextivaChannels">
+        <PropertyRef Name="XMLNextID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_XMLNextivaEventPreset">
+    <End Role="XMLNextiva" Type="SWG1Model.Store.XMLNextiva" Multiplicity="1" />
+    <End Role="XMLNextivaEventPreset" Type="SWG1Model.Store.XMLNextivaEventPreset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="XMLNextiva">
+        <PropertyRef Name="XMLNextID" />
+      </Principal>
+      <Dependent Role="XMLNextivaEventPreset">
+        <PropertyRef Name="XMLNextID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_XMLNextivaPorts">
+    <End Role="XMLNextiva" Type="SWG1Model.Store.XMLNextiva" Multiplicity="1" />
+    <End Role="XMLNextivaPorts" Type="SWG1Model.Store.XMLNextivaPorts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="XMLNextiva">
+        <PropertyRef Name="XMLNextID" />
+      </Principal>
+      <Dependent Role="XMLNextivaPorts">
+        <PropertyRef Name="XMLNextID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GI_CustomerCompany_select" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GI_CustomerCompany_select_by_Id" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerCompanyID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="GI_CustomerCompany_Select_droplist" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_generate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="tableName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_Pa_getFechasServidor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="SP_TimeServer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SWG_CustomerCompanyDataComunication_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerCompanyID" Type="int" Mode="In" />
+    <Parameter Name="CusCompanyDataCameraName" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataIDE" Type="int" Mode="In" />
+    <Parameter Name="CusCompanyDataNextNiveles" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataSiteName" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataNameUrl" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataSiteUser" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataSitePass" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataAlarmSite" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataListenResponse" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataListenError" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataPathString" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataFileName" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataActivo" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_CustomerCompanyDataComunication_Select" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CusCompanyDataID" Type="int" Mode="In" />
+    <Parameter Name="CustomerCompanyID" Type="int" Mode="In" />
+    <Parameter Name="CusCompanyDataCameraName" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataIDE" Type="int" Mode="In" />
+    <Parameter Name="CusCompanyDataNextNiveles" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataSiteName" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataNameUrl" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataSiteUser" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataSitePass" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataAlarmSite" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataListenResponse" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataListenError" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataPathString" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataFileName" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataActivo" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_CustomerCompanyDataComunication_Select_CustomerCompanyID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerCompanyID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_CustomerCompanyDataComunication_Select_ID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CusCompanyDataID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_CustomerCompanyDataComunication_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CusCompanyDataID" Type="int" Mode="In" />
+    <Parameter Name="CustomerCompanyID" Type="int" Mode="In" />
+    <Parameter Name="CusCompanyDataCameraName" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataIDE" Type="int" Mode="In" />
+    <Parameter Name="CusCompanyDataNextNiveles" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataSiteName" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataNameUrl" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataSiteUser" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataSitePass" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataAlarmSite" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataListenResponse" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataListenError" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataPathString" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataFileName" Type="varchar" Mode="In" />
+    <Parameter Name="CusCompanyDataActivo" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_Delete_CustomerCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerCompanyID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_Device_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DeviceID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_Device_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DeviceIDE" Type="varchar" Mode="In" />
+    <Parameter Name="DeviceNameDescrip" Type="varchar" Mode="In" />
+    <Parameter Name="TypeDeviceID" Type="int" Mode="In" />
+    <Parameter Name="CustomerCompanyID" Type="int" Mode="In" />
+    <Parameter Name="DeviceChannel" Type="int" Mode="In" />
+    <Parameter Name="DeviceIDLogon" Type="varchar" Mode="In" />
+    <Parameter Name="DeviceIP" Type="varchar" Mode="In" />
+    <Parameter Name="DeviceUser" Type="varchar" Mode="In" />
+    <Parameter Name="DevicePass" Type="varchar" Mode="In" />
+    <Parameter Name="DevicePort" Type="varchar" Mode="In" />
+    <Parameter Name="DeviceDateIng" Type="datetime" Mode="In" />
+    <Parameter Name="DeviceEstado" Type="int" Mode="In" />
+    <Parameter Name="SystemDeviceID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_Device_Select" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SWG_Device_Select_By_CompanyID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerCompanyID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_Device_Select_by_DeviceID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DeviceID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_Device_Select_by_DeviceIP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DeviceIP" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SWG_Device_SelectList_By_CompanyID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerCompanyID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_Device_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DeviceID" Type="int" Mode="In" />
+    <Parameter Name="DeviceIDE" Type="varchar" Mode="In" />
+    <Parameter Name="DeviceNameDescrip" Type="varchar" Mode="In" />
+    <Parameter Name="TypeDeviceID" Type="int" Mode="In" />
+    <Parameter Name="CustomerCompanyID" Type="int" Mode="In" />
+    <Parameter Name="DeviceChannel" Type="int" Mode="In" />
+    <Parameter Name="DeviceIDLogon" Type="varchar" Mode="In" />
+    <Parameter Name="DeviceIP" Type="varchar" Mode="In" />
+    <Parameter Name="DeviceUser" Type="varchar" Mode="In" />
+    <Parameter Name="DevicePass" Type="varchar" Mode="In" />
+    <Parameter Name="DevicePort" Type="varchar" Mode="In" />
+    <Parameter Name="DeviceDateIng" Type="datetime" Mode="In" />
+    <Parameter Name="DeviceEstado" Type="int" Mode="In" />
+    <Parameter Name="SystemDeviceID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_insert_AlarmInfomation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AlarmInfIDE" Type="int" Mode="In" />
+    <Parameter Name="AlarmInfChannel" Type="int" Mode="In" />
+    <Parameter Name="AlarmInfState" Type="int" Mode="In" />
+    <Parameter Name="AlarmInfEventType" Type="int" Mode="In" />
+    <Parameter Name="AlarmInfRuleID" Type="int" Mode="In" />
+    <Parameter Name="AlarmInTargetID" Type="int" Mode="In" />
+    <Parameter Name="AlarmInfTargetType" Type="int" Mode="In" />
+    <Parameter Name="AlarmInfrctTarget" Type="varchar" Mode="In" />
+    <Parameter Name="AlarmInfTargetSpeed" Type="int" Mode="In" />
+    <Parameter Name="AlarmInfTargetDirection" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_Insert_AlarmSentNextiva" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AlarmSentIDE" Type="varchar" Mode="In" />
+    <Parameter Name="AlarmSentChannel" Type="int" Mode="In" />
+    <Parameter Name="AlarmSentState" Type="int" Mode="In" />
+    <Parameter Name="AlarmSentventType" Type="int" Mode="In" />
+    <Parameter Name="AlarmSentRuleID" Type="int" Mode="In" />
+    <Parameter Name="AlarmSentTargetID" Type="int" Mode="In" />
+    <Parameter Name="AlarmSentTargetType" Type="int" Mode="In" />
+    <Parameter Name="AlarmSentrctTarget" Type="varchar" Mode="In" />
+    <Parameter Name="AlarmSentTargetSpeed" Type="int" Mode="In" />
+    <Parameter Name="AlarmSentTargetDirection" Type="int" Mode="In" />
+    <Parameter Name="AlarmSentDescription" Type="varchar" Mode="In" />
+    <Parameter Name="AlarmSentEstado" Type="int" Mode="In" />
+    <Parameter Name="CustomerCompanyID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_insert_Camera" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CameraIDE" Type="varchar" Mode="In" />
+    <Parameter Name="CameraIDLogon" Type="varchar" Mode="In" />
+    <Parameter Name="CameraIP" Type="varchar" Mode="In" />
+    <Parameter Name="CameraUser" Type="varchar" Mode="In" />
+    <Parameter Name="CameraPass" Type="varchar" Mode="In" />
+    <Parameter Name="CameraPort" Type="varchar" Mode="In" />
+    <Parameter Name="CameraEstado" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_insert_CameraPreset" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CameraID" Type="int" Mode="In" />
+    <Parameter Name="CameraPresetChannel" Type="int" Mode="In" />
+    <Parameter Name="CameraPresetPresNumber" Type="int" Mode="In" />
+    <Parameter Name="CameraPresetPresCabecera" Type="varchar" Mode="In" />
+    <Parameter Name="CameraPresetPresArgument" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SWG_Insert_CustomerCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerCompanyIDE" Type="varchar" Mode="In" />
+    <Parameter Name="CustomerCompanyName" Type="varchar" Mode="In" />
+    <Parameter Name="CustomerCompanyDir" Type="varchar" Mode="In" />
+    <Parameter Name="CustomerCompanyPhone" Type="varchar" Mode="In" />
+    <Parameter Name="CustomerCompanyCelPhone" Type="varchar" Mode="In" />
+    <Parameter Name="CustomerCompanyEmail" Type="varchar" Mode="In" />
+    <Parameter Name="CustomerCompanyFax" Type="nchar" Mode="In" />
+    <Parameter Name="CustomerCompanyWebSite" Type="nchar" Mode="In" />
+    <Parameter Name="CiudadID" Type="int" Mode="In" />
+    <Parameter Name="CustomerCompanyDateIng" Type="datetime" Mode="In" />
+    <Parameter Name="CustomerCompanyState" Type="int" Mode="In" />
+    <Parameter Name="CustomerCompanyShortName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SWG_Insert_Errores" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Fecha" Type="datetime" Mode="In" />
+    <Parameter Name="MachineName" Type="varchar" Mode="In" />
+    <Parameter Name="UserName" Type="varchar" Mode="In" />
+    <Parameter Name="IdSistema" Type="int" Mode="In" />
+    <Parameter Name="Mensaje" Type="varchar" Mode="In" />
+    <Parameter Name="Resuelto" Type="bit" Mode="In" />
+    <Parameter Name="NumeroError" Type="int" Mode="In" />
+    <Parameter Name="Modulo" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SWG_select_AlarmInfomation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SWG_select_Camera" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SWG_select_Camera_by_IDE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CameraIDE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SWG_select_Camera_by_IDTable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CameraID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_Select_Camera_CostumerIP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CameraIP" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SWG_select_CameraPreset" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SWG_select_Ciudad" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SWG_select_CustomerCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SWG_select_CustomerCompany_by_Id" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerCompanyID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_select_CustomerCompany_by_IDE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerCompanyIDE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SWG_select_CustomerCompany_by_Name" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NameParam" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SWG_select_CustomerCompany_By_Parameters" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CiudadID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_Select_CustomerCompany_droplist" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SWG_select_DataNextiva" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SWG_select_DataNextiva_By_Dates" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechaIni" Type="datetime" Mode="In" />
+    <Parameter Name="fechaFin" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="SWG_select_DataNextiva_by_Parameters" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AlarmSentRuleID" Type="int" Mode="In" />
+    <Parameter Name="CustomerCompanyID" Type="int" Mode="In" />
+    <Parameter Name="FechaInicio" Type="datetime" Mode="In" />
+    <Parameter Name="FechaFin" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="SWG_select_delete_Usuarios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UsuarioID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_select_Errores" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SWG_Select_EstadisticaNextica" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerCompanyID" Type="int" Mode="In" />
+    <Parameter Name="AlarmSentRuleID" Type="int" Mode="In" />
+    <Parameter Name="FechaInicio" Type="datetime" Mode="In" />
+    <Parameter Name="FechaFin" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="SWG_Select_EstadisticaNextica_AllCostumers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AlarmSentRuleID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_Select_EstadisticaNextica_AllCostumersByRules" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SWG_select_Insert_Usuarios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UsuarioRut" Type="varchar" Mode="In" />
+    <Parameter Name="UsuarioNombre" Type="varchar" Mode="In" />
+    <Parameter Name="UsuarioApellido" Type="varchar" Mode="In" />
+    <Parameter Name="UsuarioUser" Type="varchar" Mode="In" />
+    <Parameter Name="UsuarioPass" Type="varchar" Mode="In" />
+    <Parameter Name="UsuarioFechaIng" Type="datetime" Mode="In" />
+    <Parameter Name="UsuarioTipoID" Type="int" Mode="In" />
+    <Parameter Name="UsuarioPermisoCon" Type="int" Mode="In" />
+    <Parameter Name="UsuarioPermisoMod" Type="int" Mode="In" />
+    <Parameter Name="UsuarioPermisoDel" Type="int" Mode="In" />
+    <Parameter Name="UsuarioPermisoIng" Type="int" Mode="In" />
+    <Parameter Name="UsuarioFoto" Type="varchar" Mode="In" />
+    <Parameter Name="UsuarioEstado" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_select_LastAlarmSentNextiva_by_ID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AlarmSentChannel" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_select_TypeRuleNextiva_by_ID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ParamId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_select_TypeRuleNextiva_by_SDKName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ParamName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SWG_select_TypeRuleNextiva_droplist" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SWG_select_Update_Usuarios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UsuarioID" Type="int" Mode="In" />
+    <Parameter Name="UsuarioRut" Type="varchar" Mode="In" />
+    <Parameter Name="UsuarioNombre" Type="varchar" Mode="In" />
+    <Parameter Name="UsuarioApellido" Type="varchar" Mode="In" />
+    <Parameter Name="UsuarioUser" Type="varchar" Mode="In" />
+    <Parameter Name="UsuarioPass" Type="varchar" Mode="In" />
+    <Parameter Name="UsuarioFechaIng" Type="datetime" Mode="In" />
+    <Parameter Name="UsuarioTipoID" Type="int" Mode="In" />
+    <Parameter Name="UsuarioPermisoCon" Type="int" Mode="In" />
+    <Parameter Name="UsuarioPermisoMod" Type="int" Mode="In" />
+    <Parameter Name="UsuarioPermisoDel" Type="int" Mode="In" />
+    <Parameter Name="UsuarioPermisoIng" Type="int" Mode="In" />
+    <Parameter Name="UsuarioFoto" Type="varchar" Mode="In" />
+    <Parameter Name="UsuarioEstado" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_select_Usuario_Loging" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UsuarioUser" Type="varchar" Mode="In" />
+    <Parameter Name="UsuarioPass" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SWG_select_Usuarios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SWG_select_Usuarios_By_ID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UsuarioID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_select_Usuarios_by_UserName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UsuarioUser" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SWG_select_UsuarioTipo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SWG_SystemDevice_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SystemDeviceID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_SystemDevice_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SystemDeviceDescrip" Type="varchar" Mode="In" />
+    <Parameter Name="SystemDeviceUser" Type="varchar" Mode="In" />
+    <Parameter Name="SystemDevicePass" Type="varchar" Mode="In" />
+    <Parameter Name="SystemDeviceDateIng" Type="datetime" Mode="In" />
+    <Parameter Name="SystemDeviceEstado" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_SystemDevice_Select" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SWG_SystemDevice_Select_ID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SystemDeviceID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_SystemDevice_Select_List" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SWG_SystemDevice_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SystemDeviceID" Type="int" Mode="In" />
+    <Parameter Name="SystemDeviceDescrip" Type="varchar" Mode="In" />
+    <Parameter Name="SystemDeviceUser" Type="varchar" Mode="In" />
+    <Parameter Name="SystemDevicePass" Type="varchar" Mode="In" />
+    <Parameter Name="SystemDeviceDateIng" Type="datetime" Mode="In" />
+    <Parameter Name="SystemDeviceEstado" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_TypeDevice_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TypeDeviceID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_TypeDevice_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TypeDeviceDescrip" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SWG_TypeDevice_Select_by_ID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TypeDeviceID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SWG_TypeDevice_Select_List" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SWG_Update_CustomerCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CustomerCompanyID" Type="int" Mode="In" />
+    <Parameter Name="CustomerCompanyIDE" Type="varchar" Mode="In" />
+    <Parameter Name="CustomerCompanyName" Type="varchar" Mode="In" />
+    <Parameter Name="CustomerCompanyDir" Type="varchar" Mode="In" />
+    <Parameter Name="CustomerCompanyPhone" Type="varchar" Mode="In" />
+    <Parameter Name="CustomerCompanyCelPhone" Type="varchar" Mode="In" />
+    <Parameter Name="CustomerCompanyEmail" Type="varchar" Mode="In" />
+    <Parameter Name="CustomerCompanyFax" Type="nchar" Mode="In" />
+    <Parameter Name="CustomerCompanyWebSite" Type="nchar" Mode="In" />
+    <Parameter Name="CiudadID" Type="int" Mode="In" />
+    <Parameter Name="CustomerCompanyDateIng" Type="datetime" Mode="In" />
+    <Parameter Name="CustomerCompanyState" Type="int" Mode="In" />
+    <Parameter Name="CustomerCompanyShortName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SWG_UpdateState_AlarmSentNextiva" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AlarmSentID" Type="int" Mode="In" />
+    <Parameter Name="AlarmSentEstado" Type="int" Mode="In" />
+  </Function>
+  <Function Name="TypeDevice_Select" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+</Schema>

@@ -1,0 +1,11 @@
+c:\users\administrator.vm-23-w7-test\documents\visual studio 2010\Projects\WSSGWAlarmas\WSSGWAlarmas\bin\WSSGWAlarmas.dll
+c:\users\administrator.vm-23-w7-test\documents\visual studio 2010\Projects\WSSGWAlarmas\WSSGWAlarmas\bin\WSSGWAlarmas.pdb
+c:\users\administrator.vm-23-w7-test\documents\visual studio 2010\Projects\WSSGWAlarmas\WSSGWAlarmas\obj\Debug\ResolveAssemblyReference.cache
+c:\users\administrator.vm-23-w7-test\documents\visual studio 2010\Projects\WSSGWAlarmas\WSSGWAlarmas\obj\Debug\WSSGWAlarmas.dll
+c:\users\administrator.vm-23-w7-test\documents\visual studio 2010\Projects\WSSGWAlarmas\WSSGWAlarmas\obj\Debug\WSSGWAlarmas.pdb
+c:\users\administrator.vm-23-w7-test\documents\visual studio 2010\Projects\WSSGWAlarmas\WSSGWAlarmas\bin\Business.dll
+c:\users\administrator.vm-23-w7-test\documents\visual studio 2010\Projects\WSSGWAlarmas\WSSGWAlarmas\bin\DataAccess.dll
+c:\users\administrator.vm-23-w7-test\documents\visual studio 2010\Projects\WSSGWAlarmas\WSSGWAlarmas\bin\Entities.dll
+c:\users\administrator.vm-23-w7-test\documents\visual studio 2010\Projects\WSSGWAlarmas\WSSGWAlarmas\bin\Business.pdb
+c:\users\administrator.vm-23-w7-test\documents\visual studio 2010\Projects\WSSGWAlarmas\WSSGWAlarmas\bin\DataAccess.pdb
+c:\users\administrator.vm-23-w7-test\documents\visual studio 2010\Projects\WSSGWAlarmas\WSSGWAlarmas\bin\Entities.pdb

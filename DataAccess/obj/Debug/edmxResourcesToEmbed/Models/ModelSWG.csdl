@@ -1,0 +1,900 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SWG1Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+  <EntityContainer Name="SWG1Entities">
+    <EntitySet Name="Adaptor" EntityType="SWG1Model.Adaptor" />
+    <EntitySet Name="AlarmInfomation" EntityType="SWG1Model.AlarmInfomation" />
+    <EntitySet Name="AlarmSentNextiva" EntityType="SWG1Model.AlarmSentNextiva" />
+    <EntitySet Name="AlarmTypeCapturedMovements" EntityType="SWG1Model.AlarmTypeCapturedMovements" />
+    <EntitySet Name="AlertasCapturadas" EntityType="SWG1Model.AlertasCapturadas" />
+    <EntitySet Name="AlertasProcesadas" EntityType="SWG1Model.AlertasProcesadas" />
+    <EntitySet Name="Camera" EntityType="SWG1Model.Camera" />
+    <EntitySet Name="CameraPreset" EntityType="SWG1Model.CameraPreset" />
+    <EntitySet Name="CustomerCompany" EntityType="SWG1Model.CustomerCompany" />
+    <EntitySet Name="CustomerCompanyCamaras" EntityType="SWG1Model.CustomerCompanyCamaras" />
+    <EntitySet Name="CustomerCompanyDataComunication" EntityType="SWG1Model.CustomerCompanyDataComunication" />
+    <EntitySet Name="CustomerCompanyShopMap" EntityType="SWG1Model.CustomerCompanyShopMap" />
+    <EntitySet Name="CustomerCompanyShopStore" EntityType="SWG1Model.CustomerCompanyShopStore" />
+    <EntitySet Name="CustomerCompanyTypeMap" EntityType="SWG1Model.CustomerCompanyTypeMap" />
+    <EntitySet Name="CustomerPrivilegesOptions" EntityType="SWG1Model.CustomerPrivilegesOptions" />
+    <EntitySet Name="CustomerSitePrivileges" EntityType="SWG1Model.CustomerSitePrivileges" />
+    <EntitySet Name="CustomerTypeUser" EntityType="SWG1Model.CustomerTypeUser" />
+    <EntitySet Name="CustomerUsers" EntityType="SWG1Model.CustomerUsers" />
+    <EntitySet Name="Device" EntityType="SWG1Model.Device" />
+    <EntitySet Name="Errores" EntityType="SWG1Model.Errores" />
+    <EntitySet Name="GI_Perfil" EntityType="SWG1Model.GI_Perfil" />
+    <EntitySet Name="GI_PerfilOpciones" EntityType="SWG1Model.GI_PerfilOpciones" />
+    <EntitySet Name="GI_Sistema" EntityType="SWG1Model.GI_Sistema" />
+    <EntitySet Name="GI_Usuario" EntityType="SWG1Model.GI_Usuario" />
+    <EntitySet Name="GI_UsuarioPerfil" EntityType="SWG1Model.GI_UsuarioPerfil" />
+    <EntitySet Name="GI_UsuarioTipo" EntityType="SWG1Model.GI_UsuarioTipo" />
+    <EntitySet Name="GIC_Ciudad" EntityType="SWG1Model.GIC_Ciudad" />
+    <EntitySet Name="GIC_Comuna" EntityType="SWG1Model.GIC_Comuna" />
+    <EntitySet Name="GIC_Pais" EntityType="SWG1Model.GIC_Pais" />
+    <EntitySet Name="GIC_Provincia" EntityType="SWG1Model.GIC_Provincia" />
+    <EntitySet Name="GIC_Region" EntityType="SWG1Model.GIC_Region" />
+    <EntitySet Name="IbeaconLocationCustomerClientShop" EntityType="SWG1Model.IbeaconLocationCustomerClientShop" />
+    <EntitySet Name="NextivaEventPreset" EntityType="SWG1Model.NextivaEventPreset" />
+    <EntitySet Name="NextivaRulesPresentsAlarms" EntityType="SWG1Model.NextivaRulesPresentsAlarms" />
+    <EntitySet Name="Sistemas" EntityType="SWG1Model.Sistemas" />
+    <EntitySet Name="sysdiagrams" EntityType="SWG1Model.sysdiagrams" />
+    <EntitySet Name="SystemDevice" EntityType="SWG1Model.SystemDevice" />
+    <EntitySet Name="SystemOpcionDetails" EntityType="SWG1Model.SystemOpcionDetails" />
+    <EntitySet Name="SystemOpcions" EntityType="SWG1Model.SystemOpcions" />
+    <EntitySet Name="SystemTypeConfig" EntityType="SWG1Model.SystemTypeConfig" />
+    <EntitySet Name="TrackingLogSystem" EntityType="SWG1Model.TrackingLogSystem" />
+    <EntitySet Name="TypeDevice" EntityType="SWG1Model.TypeDevice" />
+    <EntitySet Name="TypeRuleNextiva" EntityType="SWG1Model.TypeRuleNextiva" />
+    <EntitySet Name="VCARulesAlarms" EntityType="SWG1Model.VCARulesAlarms" />
+    <EntitySet Name="XMLNextiva" EntityType="SWG1Model.XMLNextiva" />
+    <EntitySet Name="XMLNextivaChannels" EntityType="SWG1Model.XMLNextivaChannels" />
+    <EntitySet Name="XMLNextivaEventPreset" EntityType="SWG1Model.XMLNextivaEventPreset" />
+    <EntitySet Name="XMLNextivaPorts" EntityType="SWG1Model.XMLNextivaPorts" />
+    <AssociationSet Name="FK_CustomerCompanyCamaras_Camera" Association="SWG1Model.FK_CustomerCompanyCamaras_Camera">
+      <End Role="Camera" EntitySet="Camera" />
+      <End Role="CustomerCompanyCamaras" EntitySet="CustomerCompanyCamaras" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerCompany_GIC_Ciudad" Association="SWG1Model.FK_CustomerCompany_GIC_Ciudad">
+      <End Role="GIC_Ciudad" EntitySet="GIC_Ciudad" />
+      <End Role="CustomerCompany" EntitySet="CustomerCompany" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerCompanyCamaras_CustomerCompany" Association="SWG1Model.FK_CustomerCompanyCamaras_CustomerCompany">
+      <End Role="CustomerCompany" EntitySet="CustomerCompany" />
+      <End Role="CustomerCompanyCamaras" EntitySet="CustomerCompanyCamaras" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerCompanyDataComunication_CustomerCompany" Association="SWG1Model.FK_CustomerCompanyDataComunication_CustomerCompany">
+      <End Role="CustomerCompany" EntitySet="CustomerCompany" />
+      <End Role="CustomerCompanyDataComunication" EntitySet="CustomerCompanyDataComunication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerCompanyShopStore_CustomerCompany" Association="SWG1Model.FK_CustomerCompanyShopStore_CustomerCompany">
+      <End Role="CustomerCompany" EntitySet="CustomerCompany" />
+      <End Role="CustomerCompanyShopStore" EntitySet="CustomerCompanyShopStore" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerUsers_CustomerCompany" Association="SWG1Model.FK_CustomerUsers_CustomerCompany">
+      <End Role="CustomerCompany" EntitySet="CustomerCompany" />
+      <End Role="CustomerUsers" EntitySet="CustomerUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Device_CustomerCompany" Association="SWG1Model.FK_Device_CustomerCompany">
+      <End Role="CustomerCompany" EntitySet="CustomerCompany" />
+      <End Role="Device" EntitySet="Device" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerSitePrivileges_CustomerCompanyDataComunication" Association="SWG1Model.FK_CustomerSitePrivileges_CustomerCompanyDataComunication">
+      <End Role="CustomerCompanyDataComunication" EntitySet="CustomerCompanyDataComunication" />
+      <End Role="CustomerSitePrivileges" EntitySet="CustomerSitePrivileges" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerCompanyShopMap_CustomerCompanyShopStore" Association="SWG1Model.FK_CustomerCompanyShopMap_CustomerCompanyShopStore">
+      <End Role="CustomerCompanyShopStore" EntitySet="CustomerCompanyShopStore" />
+      <End Role="CustomerCompanyShopMap" EntitySet="CustomerCompanyShopMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerCompanyShopMap_CustomerCompanyTypeMap" Association="SWG1Model.FK_CustomerCompanyShopMap_CustomerCompanyTypeMap">
+      <End Role="CustomerCompanyTypeMap" EntitySet="CustomerCompanyTypeMap" />
+      <End Role="CustomerCompanyShopMap" EntitySet="CustomerCompanyShopMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerCompanyShopStore_GIC_Ciudad" Association="SWG1Model.FK_CustomerCompanyShopStore_GIC_Ciudad">
+      <End Role="GIC_Ciudad" EntitySet="GIC_Ciudad" />
+      <End Role="CustomerCompanyShopStore" EntitySet="CustomerCompanyShopStore" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IbeaconLocationCustomerClientShop_CustomerCompanyShopStore" Association="SWG1Model.FK_IbeaconLocationCustomerClientShop_CustomerCompanyShopStore">
+      <End Role="CustomerCompanyShopStore" EntitySet="CustomerCompanyShopStore" />
+      <End Role="IbeaconLocationCustomerClientShop" EntitySet="IbeaconLocationCustomerClientShop" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerPrivilegesOptions_CustomerSitePrivileges" Association="SWG1Model.FK_CustomerPrivilegesOptions_CustomerSitePrivileges">
+      <End Role="CustomerSitePrivileges" EntitySet="CustomerSitePrivileges" />
+      <End Role="CustomerPrivilegesOptions" EntitySet="CustomerPrivilegesOptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerUsers_CustomerTypeUser" Association="SWG1Model.FK_CustomerUsers_CustomerTypeUser">
+      <End Role="CustomerTypeUser" EntitySet="CustomerTypeUser" />
+      <End Role="CustomerUsers" EntitySet="CustomerUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Device_TypeDevice" Association="SWG1Model.FK_Device_TypeDevice">
+      <End Role="TypeDevice" EntitySet="TypeDevice" />
+      <End Role="Device" EntitySet="Device" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_Errores_Sistemas" Association="SWG1Model.FK_GI_Errores_Sistemas">
+      <End Role="Sistemas" EntitySet="Sistemas" />
+      <End Role="Errores" EntitySet="Errores" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_PerfilOpciones_GI_Perfil" Association="SWG1Model.FK_GI_PerfilOpciones_GI_Perfil">
+      <End Role="GI_Perfil" EntitySet="GI_Perfil" />
+      <End Role="GI_PerfilOpciones" EntitySet="GI_PerfilOpciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_UsuarioPerfil_GI_Perfil" Association="SWG1Model.FK_GI_UsuarioPerfil_GI_Perfil">
+      <End Role="GI_Perfil" EntitySet="GI_Perfil" />
+      <End Role="GI_UsuarioPerfil" EntitySet="GI_UsuarioPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_Usuario_GI_UsuarioTipo" Association="SWG1Model.FK_GI_Usuario_GI_UsuarioTipo">
+      <End Role="GI_UsuarioTipo" EntitySet="GI_UsuarioTipo" />
+      <End Role="GI_Usuario" EntitySet="GI_Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_UsuarioPerfil_GI_Usuario" Association="SWG1Model.FK_GI_UsuarioPerfil_GI_Usuario">
+      <End Role="GI_Usuario" EntitySet="GI_Usuario" />
+      <End Role="GI_UsuarioPerfil" EntitySet="GI_UsuarioPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_UsuarioPerfil_Sistemas" Association="SWG1Model.FK_GI_UsuarioPerfil_Sistemas">
+      <End Role="Sistemas" EntitySet="Sistemas" />
+      <End Role="GI_UsuarioPerfil" EntitySet="GI_UsuarioPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_Ciudad_GI_Region" Association="SWG1Model.FK_GI_Ciudad_GI_Region">
+      <End Role="GIC_Region" EntitySet="GIC_Region" />
+      <End Role="GIC_Ciudad" EntitySet="GIC_Ciudad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GIC_Comuna_GIC_Provincia" Association="SWG1Model.FK_GIC_Comuna_GIC_Provincia">
+      <End Role="GIC_Provincia" EntitySet="GIC_Provincia" />
+      <End Role="GIC_Comuna" EntitySet="GIC_Comuna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GIC_Region_GIC_Pais" Association="SWG1Model.FK_GIC_Region_GIC_Pais">
+      <End Role="GIC_Pais" EntitySet="GIC_Pais" />
+      <End Role="GIC_Region" EntitySet="GIC_Region" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_provincias_GI_regiones" Association="SWG1Model.FK_GI_provincias_GI_regiones">
+      <End Role="GIC_Region" EntitySet="GIC_Region" />
+      <End Role="GIC_Provincia" EntitySet="GIC_Provincia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NextivaRulesPresentsAlarms012" Association="SWG1Model.FK_NextivaRulesPresentsAlarms012">
+      <End Role="NextivaEventPreset" EntitySet="NextivaEventPreset" />
+      <End Role="NextivaRulesPresentsAlarms" EntitySet="NextivaRulesPresentsAlarms" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NextivaRulesPresentsAlarms" Association="SWG1Model.FK_NextivaRulesPresentsAlarms">
+      <End Role="VCARulesAlarms" EntitySet="VCARulesAlarms" />
+      <End Role="NextivaRulesPresentsAlarms" EntitySet="NextivaRulesPresentsAlarms" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SystemOpcionDetails_SystemOpcions" Association="SWG1Model.FK_SystemOpcionDetails_SystemOpcions">
+      <End Role="SystemOpcions" EntitySet="SystemOpcions" />
+      <End Role="SystemOpcionDetails" EntitySet="SystemOpcionDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SystemOpcions_SystemTypeConfig" Association="SWG1Model.FK_SystemOpcions_SystemTypeConfig">
+      <End Role="SystemTypeConfig" EntitySet="SystemTypeConfig" />
+      <End Role="SystemOpcions" EntitySet="SystemOpcions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_XMLNextivaChannels" Association="SWG1Model.FK_XMLNextivaChannels">
+      <End Role="XMLNextiva" EntitySet="XMLNextiva" />
+      <End Role="XMLNextivaChannels" EntitySet="XMLNextivaChannels" />
+    </AssociationSet>
+    <AssociationSet Name="FK_XMLNextivaEventPreset" Association="SWG1Model.FK_XMLNextivaEventPreset">
+      <End Role="XMLNextiva" EntitySet="XMLNextiva" />
+      <End Role="XMLNextivaEventPreset" EntitySet="XMLNextivaEventPreset" />
+    </AssociationSet>
+    <AssociationSet Name="FK_XMLNextivaPorts" Association="SWG1Model.FK_XMLNextivaPorts">
+      <End Role="XMLNextiva" EntitySet="XMLNextiva" />
+      <End Role="XMLNextivaPorts" EntitySet="XMLNextivaPorts" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Adaptor">
+    <Key>
+      <PropertyRef Name="AdaptorID" />
+    </Key>
+    <Property Name="AdaptorID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AdaptorNameDescrip" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="TypeAdaptorID" Type="Int32" Nullable="false" />
+    <Property Name="AdaptorSite" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="AdaptorUser" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="AdaptorPass" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="AdaptorPort" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="AdaptorDateIng" Type="DateTime" Nullable="false" />
+    <Property Name="AdaptorEstado" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AlarmInfomation">
+    <Key>
+      <PropertyRef Name="AlarmInfID" />
+    </Key>
+    <Property Name="AlarmInfID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AlarmInfIDE" Type="Int32" Nullable="false" />
+    <Property Name="AlarmInfChannel" Type="Int32" Nullable="false" />
+    <Property Name="AlarmInfState" Type="Int32" Nullable="false" />
+    <Property Name="AlarmInfEventType" Type="Int32" Nullable="false" />
+    <Property Name="AlarmInfRuleID" Type="Int32" Nullable="false" />
+    <Property Name="AlarmInTargetID" Type="Int32" Nullable="false" />
+    <Property Name="AlarmInfTargetType" Type="Int32" Nullable="false" />
+    <Property Name="AlarmInfrctTarget" Type="String" Nullable="false" MaxLength="3000" Unicode="false" FixedLength="false" />
+    <Property Name="AlarmInfTargetSpeed" Type="Int32" Nullable="false" />
+    <Property Name="AlarmInfTargetDirection" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AlarmSentNextiva">
+    <Key>
+      <PropertyRef Name="AlarmSentID" />
+    </Key>
+    <Property Name="AlarmSentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AlarmSentIDE" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="AlarmSentChannel" Type="Int32" Nullable="false" />
+    <Property Name="AlarmSentState" Type="Int32" Nullable="false" />
+    <Property Name="AlarmSentventType" Type="Int32" Nullable="false" />
+    <Property Name="AlarmSentRuleID" Type="Int32" Nullable="false" />
+    <Property Name="AlarmSentTargetID" Type="Int32" Nullable="false" />
+    <Property Name="AlarmSentTargetType" Type="Int32" Nullable="false" />
+    <Property Name="AlarmSentrctTarget" Type="String" Nullable="false" MaxLength="3000" Unicode="false" FixedLength="false" />
+    <Property Name="AlarmSentTargetSpeed" Type="Int32" Nullable="false" />
+    <Property Name="AlarmSentTargetDirection" Type="Int32" Nullable="false" />
+    <Property Name="AlarmSentDateIng" Type="DateTime" />
+    <Property Name="AlarmSentDateProcessed" Type="DateTime" />
+    <Property Name="AlarmSentDescription" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="AlarmSentEstado" Type="Int32" Nullable="false" />
+    <Property Name="CustomerCompanyID" Type="Int32" />
+    <Property Name="CusUserID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="AlarmTypeCapturedMovements">
+    <Key>
+      <PropertyRef Name="AlarmTypeCapMovID" />
+    </Key>
+    <Property Name="AlarmTypeCapMovID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AlarmTypeCapMovDescrip" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="AlertasCapturadas">
+    <Key>
+      <PropertyRef Name="AlertasCapID" />
+    </Key>
+    <Property Name="AlertasCapID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AlertasCapIDLogon" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="AlertasCapIP" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="AlertasCapUser" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="AlertasCapPass" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="AlertasCapChannel" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="AlertasCapTCPUDP" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="AlertasCapMainSub" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="AlertasCapAlert" Type="String" Nullable="false" MaxLength="3000" Unicode="false" FixedLength="false" />
+    <Property Name="AlertasCapEstado" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AlertasProcesadas">
+    <Key>
+      <PropertyRef Name="AlertasProcID" />
+    </Key>
+    <Property Name="AlertasProcID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AlertasProcIDLogon" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="AlertasProcIP" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="AlertasProcUser" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="AlertasProcPass" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="AlertasProcChannel" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="AlertasProcTCPUDP" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="AlertasProcMainSub" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="AlertasProcAlert" Type="String" Nullable="false" MaxLength="3000" Unicode="false" FixedLength="false" />
+    <Property Name="AlertasProcEstado" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Camera">
+    <Key>
+      <PropertyRef Name="CameraID" />
+    </Key>
+    <Property Name="CameraID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CameraIDE" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="CameraChannel" Type="Int32" Nullable="false" />
+    <Property Name="CameraIDLogon" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="CameraIP" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="CameraUser" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="CameraPass" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="CameraPort" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="CameraEstado" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CustomerCompanyCamaras" Relationship="SWG1Model.FK_CustomerCompanyCamaras_Camera" FromRole="Camera" ToRole="CustomerCompanyCamaras" />
+  </EntityType>
+  <EntityType Name="CameraPreset">
+    <Key>
+      <PropertyRef Name="CameraPresetID" />
+    </Key>
+    <Property Name="CameraPresetID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CameraID" Type="Int32" Nullable="false" />
+    <Property Name="CameraPresetChannel" Type="Int32" Nullable="false" />
+    <Property Name="CameraPresetPresNumber" Type="Int32" Nullable="false" />
+    <Property Name="CameraPresetPresCabecera" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="CameraPresetPresArgument" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="CustomerCompany">
+    <Key>
+      <PropertyRef Name="CustomerCompanyID" />
+    </Key>
+    <Property Name="CustomerCompanyID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerCompanyIDE" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CustomerCompanyName" Type="String" Nullable="false" MaxLength="180" Unicode="false" FixedLength="false" />
+    <Property Name="CustomerCompanyDir" Type="String" Nullable="false" MaxLength="280" Unicode="false" FixedLength="false" />
+    <Property Name="CustomerCompanyPhone" Type="String" Nullable="false" MaxLength="180" Unicode="false" FixedLength="false" />
+    <Property Name="CustomerCompanyCelPhone" Type="String" Nullable="false" MaxLength="180" Unicode="false" FixedLength="false" />
+    <Property Name="CustomerCompanyEmail" Type="String" Nullable="false" MaxLength="180" Unicode="false" FixedLength="false" />
+    <Property Name="CustomerCompanyFax" Type="String" MaxLength="100" Unicode="true" FixedLength="true" />
+    <Property Name="CustomerCompanyWebSite" Type="String" MaxLength="100" Unicode="true" FixedLength="true" />
+    <Property Name="CustomerCompanyDateIng" Type="DateTime" Nullable="false" />
+    <Property Name="CustomerCompanyState" Type="Int32" Nullable="false" />
+    <Property Name="CustomerCompanyShortName" Type="String" MaxLength="180" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="GIC_Ciudad" Relationship="SWG1Model.FK_CustomerCompany_GIC_Ciudad" FromRole="CustomerCompany" ToRole="GIC_Ciudad" />
+    <NavigationProperty Name="CustomerCompanyCamaras" Relationship="SWG1Model.FK_CustomerCompanyCamaras_CustomerCompany" FromRole="CustomerCompany" ToRole="CustomerCompanyCamaras" />
+    <NavigationProperty Name="CustomerCompanyDataComunication" Relationship="SWG1Model.FK_CustomerCompanyDataComunication_CustomerCompany" FromRole="CustomerCompany" ToRole="CustomerCompanyDataComunication" />
+    <NavigationProperty Name="CustomerCompanyShopStore" Relationship="SWG1Model.FK_CustomerCompanyShopStore_CustomerCompany" FromRole="CustomerCompany" ToRole="CustomerCompanyShopStore" />
+    <NavigationProperty Name="CustomerUsers" Relationship="SWG1Model.FK_CustomerUsers_CustomerCompany" FromRole="CustomerCompany" ToRole="CustomerUsers" />
+    <NavigationProperty Name="Device" Relationship="SWG1Model.FK_Device_CustomerCompany" FromRole="CustomerCompany" ToRole="Device" />
+  </EntityType>
+  <EntityType Name="CustomerCompanyCamaras">
+    <Key>
+      <PropertyRef Name="CustoCompanyCamID" />
+    </Key>
+    <Property Name="CustoCompanyCamID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustoCompanyCamDescrip" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="CustoCompanyCamDateIng" Type="DateTime" Nullable="false" />
+    <Property Name="CustoCompanyCamState" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Camera" Relationship="SWG1Model.FK_CustomerCompanyCamaras_Camera" FromRole="CustomerCompanyCamaras" ToRole="Camera" />
+    <NavigationProperty Name="CustomerCompany" Relationship="SWG1Model.FK_CustomerCompanyCamaras_CustomerCompany" FromRole="CustomerCompanyCamaras" ToRole="CustomerCompany" />
+  </EntityType>
+  <EntityType Name="CustomerCompanyDataComunication">
+    <Key>
+      <PropertyRef Name="CusCompanyDataID" />
+    </Key>
+    <Property Name="CusCompanyDataID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CusCompanyDataCameraName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CusCompanyDataIDE" Type="Int32" />
+    <Property Name="CusCompanyDataNextNiveles" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CusCompanyDataSiteName" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="CusCompanyDataNameUrl" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="CusCompanyDataSiteUser" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CusCompanyDataSitePass" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CusCompanyDataAlarmSite" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="CusCompanyDataListenResponse" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="CusCompanyDataListenError" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="CusCompanyDataPathString" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="CusCompanyDataFileName" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="CusCompanyDataActivo" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CustomerCompany" Relationship="SWG1Model.FK_CustomerCompanyDataComunication_CustomerCompany" FromRole="CustomerCompanyDataComunication" ToRole="CustomerCompany" />
+    <NavigationProperty Name="CustomerSitePrivileges" Relationship="SWG1Model.FK_CustomerSitePrivileges_CustomerCompanyDataComunication" FromRole="CustomerCompanyDataComunication" ToRole="CustomerSitePrivileges" />
+  </EntityType>
+  <EntityType Name="CustomerCompanyShopMap">
+    <Key>
+      <PropertyRef Name="CustomerCompanyMapID" />
+    </Key>
+    <Property Name="CustomerCompanyMapID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerCompanyMapDescrip" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="CustomerCompanyMap" Type="String" Nullable="false" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="CustomerCompanyMapLevel" Type="Int32" />
+    <Property Name="CustomerCompanyMapDateIng" Type="DateTime" Nullable="false" />
+    <Property Name="CustomerCompanyMapState" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CustomerCompanyShopStore" Relationship="SWG1Model.FK_CustomerCompanyShopMap_CustomerCompanyShopStore" FromRole="CustomerCompanyShopMap" ToRole="CustomerCompanyShopStore" />
+    <NavigationProperty Name="CustomerCompanyTypeMap" Relationship="SWG1Model.FK_CustomerCompanyShopMap_CustomerCompanyTypeMap" FromRole="CustomerCompanyShopMap" ToRole="CustomerCompanyTypeMap" />
+  </EntityType>
+  <EntityType Name="CustomerCompanyShopStore">
+    <Key>
+      <PropertyRef Name="CustomerCompanyShopID" />
+    </Key>
+    <Property Name="CustomerCompanyShopID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerCompanyShopDescrip" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="CustomerCompanyShopDirec" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="CustomerCompanyShopPhone" Type="String" MaxLength="180" Unicode="false" FixedLength="false" />
+    <Property Name="CustomerCompanyShopCelPhone" Type="String" Nullable="false" MaxLength="180" Unicode="false" FixedLength="false" />
+    <Property Name="CustomerCompanyShopEmail" Type="String" MaxLength="180" Unicode="false" FixedLength="false" />
+    <Property Name="CustomerCompanyShopFax" Type="String" MaxLength="100" Unicode="true" FixedLength="true" />
+    <Property Name="CustomerCompanyShopDateIng" Type="DateTime" Nullable="false" />
+    <Property Name="CustomerCompanyShopState" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CustomerCompany" Relationship="SWG1Model.FK_CustomerCompanyShopStore_CustomerCompany" FromRole="CustomerCompanyShopStore" ToRole="CustomerCompany" />
+    <NavigationProperty Name="CustomerCompanyShopMap" Relationship="SWG1Model.FK_CustomerCompanyShopMap_CustomerCompanyShopStore" FromRole="CustomerCompanyShopStore" ToRole="CustomerCompanyShopMap" />
+    <NavigationProperty Name="GIC_Ciudad" Relationship="SWG1Model.FK_CustomerCompanyShopStore_GIC_Ciudad" FromRole="CustomerCompanyShopStore" ToRole="GIC_Ciudad" />
+    <NavigationProperty Name="IbeaconLocationCustomerClientShop" Relationship="SWG1Model.FK_IbeaconLocationCustomerClientShop_CustomerCompanyShopStore" FromRole="CustomerCompanyShopStore" ToRole="IbeaconLocationCustomerClientShop" />
+  </EntityType>
+  <EntityType Name="CustomerCompanyTypeMap">
+    <Key>
+      <PropertyRef Name="CustCompanyTypeMapID" />
+    </Key>
+    <Property Name="CustCompanyTypeMapID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustCompanyTypeMapDesc" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="CustomerCompanyShopMap" Relationship="SWG1Model.FK_CustomerCompanyShopMap_CustomerCompanyTypeMap" FromRole="CustomerCompanyTypeMap" ToRole="CustomerCompanyShopMap" />
+  </EntityType>
+  <EntityType Name="CustomerPrivilegesOptions">
+    <Key>
+      <PropertyRef Name="CusSitePrivOptionID" />
+    </Key>
+    <Property Name="CusSitePrivOptionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CusSitePrivOptionDesc" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="CustomerSitePrivileges" Relationship="SWG1Model.FK_CustomerPrivilegesOptions_CustomerSitePrivileges" FromRole="CustomerPrivilegesOptions" ToRole="CustomerSitePrivileges" />
+  </EntityType>
+  <EntityType Name="CustomerSitePrivileges">
+    <Key>
+      <PropertyRef Name="CusSitePrivID" />
+    </Key>
+    <Property Name="CusSitePrivID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CusSitePrivDescrip" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="CustomerPrivObser" Type="String" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="CustomerCompanyDataComunication" Relationship="SWG1Model.FK_CustomerSitePrivileges_CustomerCompanyDataComunication" FromRole="CustomerSitePrivileges" ToRole="CustomerCompanyDataComunication" />
+    <NavigationProperty Name="CustomerPrivilegesOptions" Relationship="SWG1Model.FK_CustomerPrivilegesOptions_CustomerSitePrivileges" FromRole="CustomerSitePrivileges" ToRole="CustomerPrivilegesOptions" />
+  </EntityType>
+  <EntityType Name="CustomerTypeUser">
+    <Key>
+      <PropertyRef Name="CusUserTypeID" />
+    </Key>
+    <Property Name="CusUserTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CusUserTypeDescrip" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="CustomerUsers" Relationship="SWG1Model.FK_CustomerUsers_CustomerTypeUser" FromRole="CustomerTypeUser" ToRole="CustomerUsers" />
+  </EntityType>
+  <EntityType Name="CustomerUsers">
+    <Key>
+      <PropertyRef Name="CusUserID" />
+    </Key>
+    <Property Name="CusUserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CusUserIDE" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="CusUserNames" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CusUserLastNames" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CusUserUser" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="CusUserPass" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="CusUserDateIn" Type="DateTime" Nullable="false" />
+    <Property Name="CusUserAllowQuest" Type="Int32" Nullable="false" />
+    <Property Name="CusUserAllowUpdate" Type="Int32" Nullable="false" />
+    <Property Name="CusUserAllowDel" Type="Int32" Nullable="false" />
+    <Property Name="CusUserAllowInsert" Type="Int32" Nullable="false" />
+    <Property Name="CusUserPhoto" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="CusUserState" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CustomerCompany" Relationship="SWG1Model.FK_CustomerUsers_CustomerCompany" FromRole="CustomerUsers" ToRole="CustomerCompany" />
+    <NavigationProperty Name="CustomerTypeUser" Relationship="SWG1Model.FK_CustomerUsers_CustomerTypeUser" FromRole="CustomerUsers" ToRole="CustomerTypeUser" />
+  </EntityType>
+  <EntityType Name="Device">
+    <Key>
+      <PropertyRef Name="DeviceID" />
+    </Key>
+    <Property Name="DeviceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DeviceIDE" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="DeviceNameDescrip" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="DeviceChannel" Type="Int32" Nullable="false" />
+    <Property Name="DeviceIDLogon" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="DeviceIP" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="DeviceUser" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="DevicePass" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="DevicePort" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="DeviceDateIng" Type="DateTime" Nullable="false" />
+    <Property Name="DeviceEstado" Type="Int32" Nullable="false" />
+    <Property Name="SystemDeviceID" Type="Int32" />
+    <NavigationProperty Name="CustomerCompany" Relationship="SWG1Model.FK_Device_CustomerCompany" FromRole="Device" ToRole="CustomerCompany" />
+    <NavigationProperty Name="TypeDevice" Relationship="SWG1Model.FK_Device_TypeDevice" FromRole="Device" ToRole="TypeDevice" />
+  </EntityType>
+  <EntityType Name="Errores">
+    <Key>
+      <PropertyRef Name="IdError" />
+    </Key>
+    <Property Name="IdError" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" />
+    <Property Name="MachineName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Mensaje" Type="String" Nullable="false" MaxLength="8000" Unicode="false" FixedLength="false" />
+    <Property Name="Resuelto" Type="Boolean" Nullable="false" />
+    <Property Name="NumeroError" Type="Int32" Nullable="false" />
+    <Property Name="Modulo" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Sistemas" Relationship="SWG1Model.FK_GI_Errores_Sistemas" FromRole="Errores" ToRole="Sistemas" />
+  </EntityType>
+  <EntityType Name="GI_Perfil">
+    <Key>
+      <PropertyRef Name="PerfilID" />
+    </Key>
+    <Property Name="PerfilID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PerfilDescrip" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="PerfilSistema" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="PerfilFechaMod" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="GI_PerfilOpciones" Relationship="SWG1Model.FK_GI_PerfilOpciones_GI_Perfil" FromRole="GI_Perfil" ToRole="GI_PerfilOpciones" />
+    <NavigationProperty Name="GI_UsuarioPerfil" Relationship="SWG1Model.FK_GI_UsuarioPerfil_GI_Perfil" FromRole="GI_Perfil" ToRole="GI_UsuarioPerfil" />
+  </EntityType>
+  <EntityType Name="GI_PerfilOpciones">
+    <Key>
+      <PropertyRef Name="PerfilOpcionesID" />
+    </Key>
+    <Property Name="PerfilOpcionesID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PerfilOpcionDesc" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="PerfilOpcionFechaIng" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="GI_Perfil" Relationship="SWG1Model.FK_GI_PerfilOpciones_GI_Perfil" FromRole="GI_PerfilOpciones" ToRole="GI_Perfil" />
+  </EntityType>
+  <EntityType Name="GI_Sistema">
+    <Key>
+      <PropertyRef Name="SistemaID" />
+    </Key>
+    <Property Name="SistemaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SistemaDescrip" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="SistemaEstado" Type="Int32" Nullable="false" />
+    <Property Name="SistemaFechaIng" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GI_Usuario">
+    <Key>
+      <PropertyRef Name="UsuarioID" />
+    </Key>
+    <Property Name="UsuarioID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UsuarioRut" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="UsuarioNombre" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="UsuarioApellidos" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="UsuarioUser" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="UsuarioPass" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="UsuarioFechaIng" Type="DateTime" Nullable="false" />
+    <Property Name="UsuarioPermisoCon" Type="Int32" Nullable="false" />
+    <Property Name="UsuarioPermisoMod" Type="Int32" Nullable="false" />
+    <Property Name="UsuarioPermisoDel" Type="Int32" Nullable="false" />
+    <Property Name="UsuarioPermisoIng" Type="Int32" Nullable="false" />
+    <Property Name="UsuarioFoto" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="UsuarioEstado" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="GI_UsuarioTipo" Relationship="SWG1Model.FK_GI_Usuario_GI_UsuarioTipo" FromRole="GI_Usuario" ToRole="GI_UsuarioTipo" />
+    <NavigationProperty Name="GI_UsuarioPerfil" Relationship="SWG1Model.FK_GI_UsuarioPerfil_GI_Usuario" FromRole="GI_Usuario" ToRole="GI_UsuarioPerfil" />
+  </EntityType>
+  <EntityType Name="GI_UsuarioPerfil">
+    <Key>
+      <PropertyRef Name="UsuarioPerfilID" />
+    </Key>
+    <Property Name="UsuarioPerfilID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UsuarioPerfilDescrip" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="GI_Perfil" Relationship="SWG1Model.FK_GI_UsuarioPerfil_GI_Perfil" FromRole="GI_UsuarioPerfil" ToRole="GI_Perfil" />
+    <NavigationProperty Name="GI_Usuario" Relationship="SWG1Model.FK_GI_UsuarioPerfil_GI_Usuario" FromRole="GI_UsuarioPerfil" ToRole="GI_Usuario" />
+    <NavigationProperty Name="Sistemas" Relationship="SWG1Model.FK_GI_UsuarioPerfil_Sistemas" FromRole="GI_UsuarioPerfil" ToRole="Sistemas" />
+  </EntityType>
+  <EntityType Name="GI_UsuarioTipo">
+    <Key>
+      <PropertyRef Name="UsuarioTipoID" />
+    </Key>
+    <Property Name="UsuarioTipoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UsuarioTipoDescrip" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="GI_Usuario" Relationship="SWG1Model.FK_GI_Usuario_GI_UsuarioTipo" FromRole="GI_UsuarioTipo" ToRole="GI_Usuario" />
+  </EntityType>
+  <EntityType Name="GIC_Ciudad">
+    <Key>
+      <PropertyRef Name="CiudadID" />
+    </Key>
+    <Property Name="CiudadID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CiudadNombre" Type="String" Nullable="false" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Activo" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CustomerCompany" Relationship="SWG1Model.FK_CustomerCompany_GIC_Ciudad" FromRole="GIC_Ciudad" ToRole="CustomerCompany" />
+    <NavigationProperty Name="CustomerCompanyShopStore" Relationship="SWG1Model.FK_CustomerCompanyShopStore_GIC_Ciudad" FromRole="GIC_Ciudad" ToRole="CustomerCompanyShopStore" />
+    <NavigationProperty Name="GIC_Region" Relationship="SWG1Model.FK_GI_Ciudad_GI_Region" FromRole="GIC_Ciudad" ToRole="GIC_Region" />
+  </EntityType>
+  <EntityType Name="GIC_Comuna">
+    <Key>
+      <PropertyRef Name="ComunaID" />
+    </Key>
+    <Property Name="ComunaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ComunaNombre" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="Activo" Type="Int32" />
+    <NavigationProperty Name="GIC_Provincia" Relationship="SWG1Model.FK_GIC_Comuna_GIC_Provincia" FromRole="GIC_Comuna" ToRole="GIC_Provincia" />
+  </EntityType>
+  <EntityType Name="GIC_Pais">
+    <Key>
+      <PropertyRef Name="PaisID" />
+    </Key>
+    <Property Name="PaisID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PaisNombre" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="GIC_Region" Relationship="SWG1Model.FK_GIC_Region_GIC_Pais" FromRole="GIC_Pais" ToRole="GIC_Region" />
+  </EntityType>
+  <EntityType Name="GIC_Provincia">
+    <Key>
+      <PropertyRef Name="ProvinciaID" />
+    </Key>
+    <Property Name="ProvinciaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProvinciaNombre" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="Capital" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="Activo" Type="Int32" />
+    <NavigationProperty Name="GIC_Comuna" Relationship="SWG1Model.FK_GIC_Comuna_GIC_Provincia" FromRole="GIC_Provincia" ToRole="GIC_Comuna" />
+    <NavigationProperty Name="GIC_Region" Relationship="SWG1Model.FK_GI_provincias_GI_regiones" FromRole="GIC_Provincia" ToRole="GIC_Region" />
+  </EntityType>
+  <EntityType Name="GIC_Region">
+    <Key>
+      <PropertyRef Name="RegionID" />
+    </Key>
+    <Property Name="RegionID" Type="Int32" Nullable="false" />
+    <Property Name="Region_numero_romano" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="true" />
+    <Property Name="RegionNombre" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="Capital" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="Activo" Type="Int32" />
+    <NavigationProperty Name="GIC_Ciudad" Relationship="SWG1Model.FK_GI_Ciudad_GI_Region" FromRole="GIC_Region" ToRole="GIC_Ciudad" />
+    <NavigationProperty Name="GIC_Pais" Relationship="SWG1Model.FK_GIC_Region_GIC_Pais" FromRole="GIC_Region" ToRole="GIC_Pais" />
+    <NavigationProperty Name="GIC_Provincia" Relationship="SWG1Model.FK_GI_provincias_GI_regiones" FromRole="GIC_Region" ToRole="GIC_Provincia" />
+  </EntityType>
+  <EntityType Name="IbeaconLocationCustomerClientShop">
+    <Key>
+      <PropertyRef Name="IbeaconLocatCusID" />
+    </Key>
+    <Property Name="IbeaconLocatCusID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IbeaconLocatCusDeviceIDE" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="IbeaconLocatCusDeviceName" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="IbeaconLocatCusDeviceNumberCel" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="IbeaconLocatCusObsDescrip" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="IbeaconLocatCusObsTarget" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="IbeaconLocatCusDateIng" Type="DateTime" Nullable="false" />
+    <Property Name="IbeaconLocatCusState" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CustomerCompanyShopStore" Relationship="SWG1Model.FK_IbeaconLocationCustomerClientShop_CustomerCompanyShopStore" FromRole="IbeaconLocationCustomerClientShop" ToRole="CustomerCompanyShopStore" />
+  </EntityType>
+  <EntityType Name="NextivaEventPreset">
+    <Key>
+      <PropertyRef Name="NextivaPresEventID" />
+    </Key>
+    <Property Name="NextivaPresEventID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NextivaPresEventNumber" Type="Int32" Nullable="false" />
+    <Property Name="NextivaPresEventDescrip" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="NextivaRulesPresentsAlarms" Relationship="SWG1Model.FK_NextivaRulesPresentsAlarms012" FromRole="NextivaEventPreset" ToRole="NextivaRulesPresentsAlarms" />
+  </EntityType>
+  <EntityType Name="NextivaRulesPresentsAlarms">
+    <Key>
+      <PropertyRef Name="NextivaRulesPresentID" />
+    </Key>
+    <Property Name="NextivaRulesPresentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NextivaRulesPresentDescrip" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="NextivaEventPreset" Relationship="SWG1Model.FK_NextivaRulesPresentsAlarms012" FromRole="NextivaRulesPresentsAlarms" ToRole="NextivaEventPreset" />
+    <NavigationProperty Name="VCARulesAlarms" Relationship="SWG1Model.FK_NextivaRulesPresentsAlarms" FromRole="NextivaRulesPresentsAlarms" ToRole="VCARulesAlarms" />
+  </EntityType>
+  <EntityType Name="Sistemas">
+    <Key>
+      <PropertyRef Name="IdSistema" />
+    </Key>
+    <Property Name="IdSistema" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sistema" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="EnvioAlarma" Type="Int32" Nullable="false" />
+    <Property Name="Tecnologia" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="true" />
+    <Property Name="AlarmaEmailTo" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="AlarmaEmailCC" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="AlarmaEmailBCC" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="RespaldoEmailTo" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="RespaldoEmailCC" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="RespaldoEmailBCC" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Errores" Relationship="SWG1Model.FK_GI_Errores_Sistemas" FromRole="Sistemas" ToRole="Errores" />
+    <NavigationProperty Name="GI_UsuarioPerfil" Relationship="SWG1Model.FK_GI_UsuarioPerfil_Sistemas" FromRole="Sistemas" ToRole="GI_UsuarioPerfil" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="SystemDevice">
+    <Key>
+      <PropertyRef Name="SystemDeviceID" />
+    </Key>
+    <Property Name="SystemDeviceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SystemDeviceDescrip" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="SystemDeviceUser" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="SystemDevicePass" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="SystemDeviceDateIng" Type="DateTime" Nullable="false" />
+    <Property Name="SystemDeviceEstado" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SystemOpcionDetails">
+    <Key>
+      <PropertyRef Name="SystemOpcionDetailID" />
+    </Key>
+    <Property Name="SystemOpcionDetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SystemOpcionDetailDesc" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="SystemOpcionDetailState" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="SystemOpcions" Relationship="SWG1Model.FK_SystemOpcionDetails_SystemOpcions" FromRole="SystemOpcionDetails" ToRole="SystemOpcions" />
+  </EntityType>
+  <EntityType Name="SystemOpcions">
+    <Key>
+      <PropertyRef Name="SystemOpcionID" />
+    </Key>
+    <Property Name="SystemOpcionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SystemOpcionDesc" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="SystemOpcionState" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="SystemOpcionDetails" Relationship="SWG1Model.FK_SystemOpcionDetails_SystemOpcions" FromRole="SystemOpcions" ToRole="SystemOpcionDetails" />
+    <NavigationProperty Name="SystemTypeConfig" Relationship="SWG1Model.FK_SystemOpcions_SystemTypeConfig" FromRole="SystemOpcions" ToRole="SystemTypeConfig" />
+  </EntityType>
+  <EntityType Name="SystemTypeConfig">
+    <Key>
+      <PropertyRef Name="SystemTypeConfigID" />
+    </Key>
+    <Property Name="SystemTypeConfigID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SystemTypeConfigDesc" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="SystemOpcions" Relationship="SWG1Model.FK_SystemOpcions_SystemTypeConfig" FromRole="SystemTypeConfig" ToRole="SystemOpcions" />
+  </EntityType>
+  <EntityType Name="TrackingLogSystem">
+    <Key>
+      <PropertyRef Name="TrackingID" />
+    </Key>
+    <Property Name="TrackingID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" />
+    <Property Name="MachineName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="IdSistema" Type="Int32" Nullable="false" />
+    <Property Name="ActionMensaje" Type="String" Nullable="false" MaxLength="8000" Unicode="false" FixedLength="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <Property Name="NumeroError" Type="Int32" Nullable="false" />
+    <Property Name="Modulo" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TypeDevice">
+    <Key>
+      <PropertyRef Name="TypeDeviceID" />
+    </Key>
+    <Property Name="TypeDeviceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeDeviceDescrip" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Device" Relationship="SWG1Model.FK_Device_TypeDevice" FromRole="TypeDevice" ToRole="Device" />
+  </EntityType>
+  <EntityType Name="TypeRuleNextiva">
+    <Key>
+      <PropertyRef Name="TypeRuleID" />
+    </Key>
+    <Property Name="TypeRuleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeRuleNumber" Type="Int32" Nullable="false" />
+    <Property Name="TypeRuleDescrip" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="TypeRuleShortDescrip" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="TypeRuleTechnicalNameSDK" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="VCARulesAlarms">
+    <Key>
+      <PropertyRef Name="NextivaRulesID" />
+    </Key>
+    <Property Name="NextivaRulesID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NextivaRulesNumber" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="NextivaRulesDescripcion" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="NextivaRulesPresentsAlarms" Relationship="SWG1Model.FK_NextivaRulesPresentsAlarms" FromRole="VCARulesAlarms" ToRole="NextivaRulesPresentsAlarms" />
+  </EntityType>
+  <EntityType Name="XMLNextiva">
+    <Key>
+      <PropertyRef Name="XMLNextID" />
+    </Key>
+    <Property Name="XMLNextID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="XMLNextNiveles" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="XMLNextSiteName" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="XMLNextSiteNameUrl" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="XMLNextSiteUser" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="XMLNextSitePass" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="XMLNextAlarmSite" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="XMLNextListenResponse" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="XMLNextListenError" Type="String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="XMLNextivaChannels" Relationship="SWG1Model.FK_XMLNextivaChannels" FromRole="XMLNextiva" ToRole="XMLNextivaChannels" />
+    <NavigationProperty Name="XMLNextivaEventPreset" Relationship="SWG1Model.FK_XMLNextivaEventPreset" FromRole="XMLNextiva" ToRole="XMLNextivaEventPreset" />
+    <NavigationProperty Name="XMLNextivaPorts" Relationship="SWG1Model.FK_XMLNextivaPorts" FromRole="XMLNextiva" ToRole="XMLNextivaPorts" />
+  </EntityType>
+  <EntityType Name="XMLNextivaChannels">
+    <Key>
+      <PropertyRef Name="XMLNextChannelID" />
+    </Key>
+    <Property Name="XMLNextChannelID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="XMLNextChannel" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="XMLNextiva" Relationship="SWG1Model.FK_XMLNextivaChannels" FromRole="XMLNextivaChannels" ToRole="XMLNextiva" />
+  </EntityType>
+  <EntityType Name="XMLNextivaEventPreset">
+    <Key>
+      <PropertyRef Name="XMLNextivaPreslID" />
+    </Key>
+    <Property Name="XMLNextivaPreslID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="XMLNextivaPresNumber" Type="Int32" Nullable="false" />
+    <Property Name="XMLNextivaPresCabecera" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="XMLNextivaPresArgument" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="XMLNextiva" Relationship="SWG1Model.FK_XMLNextivaEventPreset" FromRole="XMLNextivaEventPreset" ToRole="XMLNextiva" />
+  </EntityType>
+  <EntityType Name="XMLNextivaPorts">
+    <Key>
+      <PropertyRef Name="XMLNextPortID" />
+    </Key>
+    <Property Name="XMLNextPortID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="XMLNextPorts" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="XMLNextiva" Relationship="SWG1Model.FK_XMLNextivaPorts" FromRole="XMLNextivaPorts" ToRole="XMLNextiva" />
+  </EntityType>
+  <Association Name="FK_CustomerCompanyCamaras_Camera">
+    <End Role="Camera" Type="SWG1Model.Camera" Multiplicity="1" />
+    <End Role="CustomerCompanyCamaras" Type="SWG1Model.CustomerCompanyCamaras" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_CustomerCompany_GIC_Ciudad">
+    <End Role="GIC_Ciudad" Type="SWG1Model.GIC_Ciudad" Multiplicity="1" />
+    <End Role="CustomerCompany" Type="SWG1Model.CustomerCompany" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_CustomerCompanyCamaras_CustomerCompany">
+    <End Role="CustomerCompany" Type="SWG1Model.CustomerCompany" Multiplicity="1" />
+    <End Role="CustomerCompanyCamaras" Type="SWG1Model.CustomerCompanyCamaras" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_CustomerCompanyDataComunication_CustomerCompany">
+    <End Role="CustomerCompany" Type="SWG1Model.CustomerCompany" Multiplicity="1" />
+    <End Role="CustomerCompanyDataComunication" Type="SWG1Model.CustomerCompanyDataComunication" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_CustomerCompanyShopStore_CustomerCompany">
+    <End Role="CustomerCompany" Type="SWG1Model.CustomerCompany" Multiplicity="1" />
+    <End Role="CustomerCompanyShopStore" Type="SWG1Model.CustomerCompanyShopStore" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_CustomerUsers_CustomerCompany">
+    <End Role="CustomerCompany" Type="SWG1Model.CustomerCompany" Multiplicity="1" />
+    <End Role="CustomerUsers" Type="SWG1Model.CustomerUsers" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Device_CustomerCompany">
+    <End Role="CustomerCompany" Type="SWG1Model.CustomerCompany" Multiplicity="1" />
+    <End Role="Device" Type="SWG1Model.Device" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_CustomerSitePrivileges_CustomerCompanyDataComunication">
+    <End Role="CustomerCompanyDataComunication" Type="SWG1Model.CustomerCompanyDataComunication" Multiplicity="1" />
+    <End Role="CustomerSitePrivileges" Type="SWG1Model.CustomerSitePrivileges" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_CustomerCompanyShopMap_CustomerCompanyShopStore">
+    <End Role="CustomerCompanyShopStore" Type="SWG1Model.CustomerCompanyShopStore" Multiplicity="1" />
+    <End Role="CustomerCompanyShopMap" Type="SWG1Model.CustomerCompanyShopMap" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_CustomerCompanyShopMap_CustomerCompanyTypeMap">
+    <End Role="CustomerCompanyTypeMap" Type="SWG1Model.CustomerCompanyTypeMap" Multiplicity="0..1" />
+    <End Role="CustomerCompanyShopMap" Type="SWG1Model.CustomerCompanyShopMap" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_CustomerCompanyShopStore_GIC_Ciudad">
+    <End Role="GIC_Ciudad" Type="SWG1Model.GIC_Ciudad" Multiplicity="1" />
+    <End Role="CustomerCompanyShopStore" Type="SWG1Model.CustomerCompanyShopStore" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_IbeaconLocationCustomerClientShop_CustomerCompanyShopStore">
+    <End Role="CustomerCompanyShopStore" Type="SWG1Model.CustomerCompanyShopStore" Multiplicity="1" />
+    <End Role="IbeaconLocationCustomerClientShop" Type="SWG1Model.IbeaconLocationCustomerClientShop" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_CustomerPrivilegesOptions_CustomerSitePrivileges">
+    <End Role="CustomerSitePrivileges" Type="SWG1Model.CustomerSitePrivileges" Multiplicity="1" />
+    <End Role="CustomerPrivilegesOptions" Type="SWG1Model.CustomerPrivilegesOptions" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_CustomerUsers_CustomerTypeUser">
+    <End Role="CustomerTypeUser" Type="SWG1Model.CustomerTypeUser" Multiplicity="1" />
+    <End Role="CustomerUsers" Type="SWG1Model.CustomerUsers" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_Device_TypeDevice">
+    <End Role="TypeDevice" Type="SWG1Model.TypeDevice" Multiplicity="1" />
+    <End Role="Device" Type="SWG1Model.Device" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_GI_Errores_Sistemas">
+    <End Role="Sistemas" Type="SWG1Model.Sistemas" Multiplicity="1" />
+    <End Role="Errores" Type="SWG1Model.Errores" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_GI_PerfilOpciones_GI_Perfil">
+    <End Role="GI_Perfil" Type="SWG1Model.GI_Perfil" Multiplicity="1" />
+    <End Role="GI_PerfilOpciones" Type="SWG1Model.GI_PerfilOpciones" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_GI_UsuarioPerfil_GI_Perfil">
+    <End Role="GI_Perfil" Type="SWG1Model.GI_Perfil" Multiplicity="1" />
+    <End Role="GI_UsuarioPerfil" Type="SWG1Model.GI_UsuarioPerfil" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_GI_Usuario_GI_UsuarioTipo">
+    <End Role="GI_UsuarioTipo" Type="SWG1Model.GI_UsuarioTipo" Multiplicity="1" />
+    <End Role="GI_Usuario" Type="SWG1Model.GI_Usuario" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_GI_UsuarioPerfil_GI_Usuario">
+    <End Role="GI_Usuario" Type="SWG1Model.GI_Usuario" Multiplicity="1" />
+    <End Role="GI_UsuarioPerfil" Type="SWG1Model.GI_UsuarioPerfil" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_GI_UsuarioPerfil_Sistemas">
+    <End Role="Sistemas" Type="SWG1Model.Sistemas" Multiplicity="1" />
+    <End Role="GI_UsuarioPerfil" Type="SWG1Model.GI_UsuarioPerfil" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_GI_Ciudad_GI_Region">
+    <End Role="GIC_Region" Type="SWG1Model.GIC_Region" Multiplicity="1" />
+    <End Role="GIC_Ciudad" Type="SWG1Model.GIC_Ciudad" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_GIC_Comuna_GIC_Provincia">
+    <End Role="GIC_Provincia" Type="SWG1Model.GIC_Provincia" Multiplicity="1" />
+    <End Role="GIC_Comuna" Type="SWG1Model.GIC_Comuna" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_GIC_Region_GIC_Pais">
+    <End Role="GIC_Pais" Type="SWG1Model.GIC_Pais" Multiplicity="0..1" />
+    <End Role="GIC_Region" Type="SWG1Model.GIC_Region" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_GI_provincias_GI_regiones">
+    <End Role="GIC_Region" Type="SWG1Model.GIC_Region" Multiplicity="1" />
+    <End Role="GIC_Provincia" Type="SWG1Model.GIC_Provincia" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_NextivaRulesPresentsAlarms012">
+    <End Role="NextivaEventPreset" Type="SWG1Model.NextivaEventPreset" Multiplicity="1" />
+    <End Role="NextivaRulesPresentsAlarms" Type="SWG1Model.NextivaRulesPresentsAlarms" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_NextivaRulesPresentsAlarms">
+    <End Role="VCARulesAlarms" Type="SWG1Model.VCARulesAlarms" Multiplicity="1" />
+    <End Role="NextivaRulesPresentsAlarms" Type="SWG1Model.NextivaRulesPresentsAlarms" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_SystemOpcionDetails_SystemOpcions">
+    <End Role="SystemOpcions" Type="SWG1Model.SystemOpcions" Multiplicity="1" />
+    <End Role="SystemOpcionDetails" Type="SWG1Model.SystemOpcionDetails" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_SystemOpcions_SystemTypeConfig">
+    <End Role="SystemTypeConfig" Type="SWG1Model.SystemTypeConfig" Multiplicity="0..1" />
+    <End Role="SystemOpcions" Type="SWG1Model.SystemOpcions" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_XMLNextivaChannels">
+    <End Role="XMLNextiva" Type="SWG1Model.XMLNextiva" Multiplicity="1" />
+    <End Role="XMLNextivaChannels" Type="SWG1Model.XMLNextivaChannels" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_XMLNextivaEventPreset">
+    <End Role="XMLNextiva" Type="SWG1Model.XMLNextiva" Multiplicity="1" />
+    <End Role="XMLNextivaEventPreset" Type="SWG1Model.XMLNextivaEventPreset" Multiplicity="*" />
+  </Association>
+  <Association Name="FK_XMLNextivaPorts">
+    <End Role="XMLNextiva" Type="SWG1Model.XMLNextiva" Multiplicity="1" />
+    <End Role="XMLNextivaPorts" Type="SWG1Model.XMLNextivaPorts" Multiplicity="*" />
+  </Association>
+</Schema>

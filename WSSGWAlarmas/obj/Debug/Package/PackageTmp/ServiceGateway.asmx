@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="ServiceGateway.asmx.cs" Class="WSSGWAlarmas.Service1" %>
